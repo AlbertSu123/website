@@ -1,6 +1,6 @@
 ---
 title: ESPM 50AC Lecture Notes
-date: "2021-8-20T23:46:37.121Z"
+date: "2021-08-20T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "espm50ac-lecture-notes"
@@ -14,7 +14,6 @@ socialImage: "/media/image-2.jpg"
 ---
 
 # Unit 2-Native Americans
-
 ## Federal Trust Doctrine
 Theory: Guardianship Theory, tribes need a guardian.
 Legal Doctrine: Trust Doctrine, Wardship vs Sovereignty
@@ -64,4 +63,3 @@ Indian Reorganization Act 1934
   - Incorporation: traditionalism + Modernization
 
 ## Remaining Questions
-1. 
