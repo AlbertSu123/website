@@ -46,6 +46,7 @@
     "gatsby": "^2.32.13",
     "gatsby-link": "^2.11.0",
     "gatsby-plugin-catch-links": "^2.10.0",
+    "gatsby-plugin-disqus": "^1.2.3",
     "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-flow": "^1.10.0",
     "gatsby-plugin-google-gtag": "^2.8.0",

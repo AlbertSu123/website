@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = {
-  url: 'hhttps://albertsu.netlify.app/',
+  url: 'https://albertsu.netlify.app/',
   pathPrefix: '/',
-  title: 'Blog by Albert Su',
+  title: 'Albert Su',
   subtitle: 'Just a kid looking to make it',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'albertsu',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
