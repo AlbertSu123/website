@@ -22,16 +22,15 @@ socialImage: "/media/image-2.jpg"
   - Not superior to others
   - He is NOT dependent on Indian Speak to maintain indigenous Identity
 
-Answer
->! He is NOT dependent on Indian Speak to maintain indigenous Identity
+Answer: He is NOT dependent on Indian Speak to maintain indigenous Identity
 
 **Noble Savages are not:**
   - Innocent
   - Intelligent
   - Violent
   - Strong Intuition
-Answer
->! Violent
+  
+Answer: Violent
 
 Native americans didn't have any attachment to a specific piece of land - kidwell
 
