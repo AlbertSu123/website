@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'hhttps://albertsu.netlify.app/',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Albert Su',
+  subtitle: 'Just a kid looking to make it',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -25,18 +25,18 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Albert Su',
+    photo: '/photo.jfif',
+    bio: 'Just a kid looking to make it',
     contacts: {
-      email: '',
+      email: 'albert_su@berkeley.edu',
       facebook: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'github.com/albertsu123',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/albert-su/',
       instagram: '#',
       line: '',
       gitlab: '',
