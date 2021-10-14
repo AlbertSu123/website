@@ -124,8 +124,28 @@ If our model has an intercept term(when our design matrix has a column of all 1s
   - Simple linear model with a squared loss: Any non constant value has unique mean, SD, correlation coefficient
   - Constant model with absolute loss: Unique when there is an odd number y values, if there is an even number of y values, there are infinitely many solution.
 
-## Invertibility of X transpose * X
+## Invertability of X transpose * X
   - Invertible iff it is full rank
   - X transpose * X and X have the same rank
   - Thus, X^T * X is invertible iff X has rank p + 1 (full column rank)
+
+# Real World Example - Fairness in Housing Appraisal
+
+## Situation
+The cook county assessor's office is in charge of assessing property values in order to determine property taxes. 
+
+## Problem
+The biased property value assessment resulted in a regressive tax, where rich people paid less and poor people paid more. In addition, rich people appealed more often than poor people, resulting in an even greater reduction of property tax. 
+
+## Solution
+1. **Ask a Question:** What do we want to know? How to fairly value things for tax purposes. What are our metrics for success? Have both fairness and transparency in projections.
+2. **Data Acquisition and Cleaning:** What data do we have and what do we need? Housing Sales data between 2013-2019, Property Characteristics-ie age, bedrooms, baths, etc.How will we sample more data? Is our sample representative?
+3. **Exploratory Data Analysis and Visualization:** What attributes are most predictive of sales price? Which are potentially problematic? Is the data predictive of sales price? 
+
+## Takeaways
+1. Accuracy is a necessary, but not sufficient condition of a fair system.
+2. Fairness and transparency are context-dependent
+3. Learn to work with contexts and consider how your data analysis will reshape them
+4. Keep in mind the power and limits of data analysis?
+
 ## Questions to Ask
