@@ -79,7 +79,13 @@ Solution: Use a hash table aka Inverted Page Table whose size is independent of 
 Cons: The complexity of looking things up in hardware in a hash table makes things hard. There will also be cache issues since each thing in the hash table is far from everything else. Total size of page table = number of pages used by program in physical memory
 
 ## Address Translation Comparison
-TODO: Add slide 10 here
+| Technique            | Advantages                                                            | Disadvantages                                                |
+|----------------------|-----------------------------------------------------------------------|--------------------------------------------------------------|
+| Simple Segmentation  | Fast context switching since the segment map is maintained by the CPU | External Fragmentation                                       |
+| Paging(Single-Level) | No external fragmentation, fast + easy allocation                     | Large table size, internal fragmentation                     |
+| Paged Segmentation   | Table size ~ # of pages in virtual memory, fast + easy allocation     | Multiple memory references per page access                   |
+| Multi-Level Paging   | Table size ~ # of pages in virtual memory, fast + easy allocation     | Multiple memory references per page access                   |
+| Inverted Page Table  | Table size ~ # of pages in physical memory                            | Complex Hash function required, no page table cache locality |
 
 ## How is Translation Accomplished? - The Memory Management Unit (MMU)
 The MMU must translate virtual addresses to physical addresses for every instruction fetch, every load, and every store.
@@ -140,14 +146,20 @@ Cons: More complex, read miss may require writeback of dirty data
 ## Physically Indexed vs Virtually Indexed Caches
   - Physically Indexed Caches (More common)
       - Address handed to cache after translation, the page table holds physical addresses
-      - Pros: Every piece of data has a single place in the cache and the cache stays unchanged 
+      - Pros: Every piece of data has a single place in the cache and the cache stays unchanged, thus a cache remains unchanged through a context switch
+      - Cons: The TLB is in the critical path of the lookup
+  - Virtually Indexed Caches(Less common)
+      - The address is handed to the cache before translation, the page table holds virtual addresses
+      - Pros: The TLB is not in the critical path of lookup
+      - Cons: The same data could be mapped in multiple places of cache and may need to flush cache on context switch.
+
 
 ## What TLB Organization Makes Sense?
 Requirements: The TLB needs to be really fast since it is in the critical path of memory access. Also, there needs to be very few conflicts, otherwise miss times will be extremely high because we need to traverse the page table.
 
 TLB lookup is serial with cache lookup, thus. the speed of the TLB can impact the speed of access to the cache
 
-# Discussion Notes - TLB
+<!-- # Discussion Notes - TLB
 ## Paging and Address Translation - Conceptual Questions
 If the physical memory size (in bytes) is doubled, how does the number of bits in each entry of the page table change?
 It doesn't?
@@ -187,7 +199,7 @@ List the fields of a Page Table Entry (PTE) in your scheme.
 
 Without a cache or TLB, how many memory operations are required to read or write a single 32-bit word?
 
-With a TLB, how many memory operations can this be reduced to? Best-case scenario? Worst-case scenario?
+With a TLB, how many memory operations can this be reduced to? Best-case scenario? Worst-case scenario? -->
 # Questions to ask
 1. What is `0x12345678` `123456` is what? `78` is the offset in the page table?
 2. Caching in industry? What is it used for?
