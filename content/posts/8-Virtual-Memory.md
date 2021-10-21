@@ -7,6 +7,7 @@ slug: "real-time-scheduling"
 category: "Operating System Notes"
 tags:
   - "Notes"
+  - "Lecture"
   - "Operating System"
   
 description: "Notes on the different types of real-time scheduling systems"
@@ -200,6 +201,10 @@ List the fields of a Page Table Entry (PTE) in your scheme.
 Without a cache or TLB, how many memory operations are required to read or write a single 32-bit word?
 
 With a TLB, how many memory operations can this be reduced to? Best-case scenario? Worst-case scenario? -->
+
+# Demand Paging
+
+
 # Questions to ask
 1. What is `0x12345678` `123456` is what? `78` is the offset in the page table?
 2. Caching in industry? What is it used for?

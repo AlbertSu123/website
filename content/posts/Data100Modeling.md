@@ -148,4 +148,58 @@ The biased property value assessment resulted in a regressive tax, where rich pe
 3. Learn to work with contexts and consider how your data analysis will reshape them
 4. Keep in mind the power and limits of data analysis?
 
+# Probability and Generalization
+
+## Random Variables
+**Random Variable:** Represents a numerical value determined by a probabilistic event. 
+### Probability Mass Function
+  - The distribution of a random variable X provides the probability that X takes on each of its possible values(discrete)
+  - The probabilities for all possible values of random variable X in a Probability Mass Function must sum to 1
+  - Each individual probability for a given value X must be between 0 and 1.
+**Joint Distributions:** Probability of two or more random variables taking on a specific set of values. Ie P(X=0, Y= 10) = (0.5) ** 10 for coin flips where X is heads and Y is tails
+**Marginal Distribution:** A way to go from the joint distribution to the distribution for a single variable. Ie consider all possible values of Y that can simultaneously happen with X and sum over all of the joint probabilities.  
+∑y∈Y P(X=x,Y=y) = P(X=x)
+
+**Independent Random Variables:** Any two random variables are independent if and only if knowing the outcome of one variable does not alter the probability of observing any outcomes of the other variables.
+
+## Expectation and Variance
+### Expectation
+  - The long run average of a random variable, also known as the expected value or expectation of a random variable.  
+  - E[X] = ∑ x∈X x ⋅ P(X=x)
+
+**Linearity of Expectation:** 
+  - Use when working with linear combinations of random variables. This holds true even when the random variables are dependent on each other.
+  - E[X+Y] = E[X] + E[Y]  
+  - E[cX] = c * E[X]  
+  - E[X−Y] = E[X] − E[Y]  
+
+However, E[XY]=E[X]E[Y] is only true when X and Y are independent random variables.
+
+### Variance
+  - The variance of a random variable is a description of the variable's spread, or how far values are apart from each other.  
+  - Var(X) = E[(X − E[X])**2]
+  - Var(X) = E[X**2] − (E[X])**2  
+  - Var(aX + b) = a**2 * Var(X) Is true if X is a random variable
+  - Var(X + Y) = Var(X) + Var(Y) Holds true if X and Y are independent  
+
+### Covariance
+If the covariance is positive, the random variables are positively correlated(ie move in the same direction for stocks). If the covariance is negative, the random variables are negatively correlated. A covariance of 0 indicates the variables are independent.
+
+  - Cov(X,Y) = E[(X − E[X]) * (Y − E[Y])]
+  - Cov(X,Y)= E[XY] − E[X]*E[Y]
+
+## Risk
+**Risk:** Statistical risk is known as the expected loss, or the expected value of the model's loss on randomly chosen points from the population.
+  - R(θ) = E[(X − θ)**2]
+  - To minimize risk, use R(θ) = E[(X − E[X]) ** 2] + (E[X] − θ) ** 2
+  - R(θ) = Bias + Variance = (E[X] − θ) ** 2 + E[(X − E[X]) ** 2]
+  - A low variance means the random variable will likely take a value close to θ, while a high variance means the random variable will take a value far from θ
+
+### Empirical Risk Minimization
+  - Since calculating the expected value of X requires complete knowledge of the population, since expected value is defined as probability X takes a specific value * that specific value. 
+  - We can use a large random sample instead of the population when calculating the expected value of X
+  - Thus we can approximate E[X] ~ mean(x)
+  - Therefore, the empirical risk is the risk from using the large random sample instead of the population
+
+# Multiple Linear Regression
 ## Questions to Ask

@@ -62,4 +62,8 @@ Indian Reorganization Act 1934
   - Trust Doctrine: Sovereignty?
   - Incorporation: traditionalism + Modernization
 
+# Federal Indian Policy
+
+
+
 ## Remaining Questions
