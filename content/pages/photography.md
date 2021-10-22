@@ -18,10 +18,10 @@ socialImage: "/media/image-2.jpg"
 ![](/media/Photography/Dull2.jpg)
 ![](/media/Photography/Dull3.jpg)
 
-![](/media/Photography/Green1.jpg)
-![](/media/Photography/Green2.jpg)
-![](/media/Photography/Green3.jpg)
-![](/media/Photography/Green4.jpg)
+![](/media/Photography/Greens1.jpg)
+![](/media/Photography/Greens2.jpg)
+![](/media/Photography/Greens3.jpg)
+![](/media/Photography/Greens4.jpg)
 
 ![](/media/Photography/NightRoad1.jpg)
 ![](/media/Photography/NightRoad2.jpg)
