@@ -37,4 +37,27 @@ socialImage: "/media/image-2.jpg"
 - application translates pointers
 - hybrid, with address translations in software and hardware
 
+## Simple Address Translation
+
+- At its core, it is a black box that translates a virtual address to a physical address
+- Possible implementations could be an array, a tree, a hash table, or pretty much anything
+
+**Goals of an address translation black box:**
+
+1. **Memory Protection -** Limit access of a process to certain regions of memory(ie code)
+2. **Memory Sharing -** Allow multiple processes to share memory (ie program code, file)
+3. **Flexible Memory placement -** Put process anywhere to pack physical memory + use caches better
+4. **Sparse Addresses -** Programs have multiple dynamic memory regions such as the heap for data objects, a stack for each thread, and memory mapped files
+5. **Runtime lookup efficiency -** Fetching addresses should be fast
+6. **Compact Translation Table -** Black box should not take much memory
+7. **Portability -** Works on all types of architectures
+
+### Symbol Table and Dynamically Linked Library(DLL)
+
+- **Problem:** Multiprogramming requires address translation for absolute addresses, such as goto the start of the procedure or loading a global variable.
+- Old Solution: Early OS used relocating loaders, after picking an empty region of physical memory, the loader would modify instructions that used an absolute addresses. The modifications were tracked in the _symbol table_.
+- Current Solution: Generate the symbol table, which tracks which values need to be modified when files are assembled together by the linker. Also, commerical operating systems use a dynamically linked library, which links a library into a program when the program first calls into the library.
+
+## Flexible Address Translation
+
 # Questions
