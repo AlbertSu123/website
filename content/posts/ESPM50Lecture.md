@@ -62,7 +62,14 @@ Indian Reorganization Act 1934
   - Trust Doctrine: Sovereignty?
   - Incorporation: traditionalism + Modernization
 
-# Federal Indian Policy
+# Asian Immigration
+
+## Push Factors
+Economy, Politics, religion, geography, policy, population, war, disaster, environmental change
+## Pull Factors
+economic opportunity, political and religious freedom
+
+## Means
 
 
 
