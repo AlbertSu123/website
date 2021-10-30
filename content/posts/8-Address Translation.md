@@ -134,7 +134,7 @@ inverted page table entry = {
 
 Page tables, Segmentations, etc. all require multiple extra memory references before reaching the physical memory location. This greatly increases the overhead per instruction.
 
-Thus, we can use a cache to improve performance. A cache stores certain data to increase the speed of future requests, usually by taking advantage of temporal locality of spatial locality.
+Thus, we can use a cache to improve performance. A cache stores certain data to increase the speed of future requests, usually by taking advantage of temporal locality or spatial locality.
 
 ## Translation Lookaside Buffer (TLB)
 
@@ -184,7 +184,7 @@ tagged TLB entry = {
 When adding permissions to virtual address space, the TLB can be left alone.
 When reducing permissions to a page, the kernel checks if the TLB has a copy of the old page. If it does, the kernel must update permissions.
 
-3. **TLB Shootdown:** Multiprocessors might have a cahced copy of a translation in its TLB. Thus, whenever a page table entry is modified, the corresponding entry in every processor's TLB must be discarded. This requires interrupting the processor. (very expensive!)
+3. **TLB Shootdown:** Multiprocessors might have a cached copy of a translation in its TLB. Thus, whenever a page table entry is modified, the corresponding entry in every processor's TLB must be discarded. This requires interrupting the processor. (very expensive!)
 
 ## Virtually Addressed Caches
 
