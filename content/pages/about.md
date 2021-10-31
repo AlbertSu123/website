@@ -4,10 +4,11 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-# Not looking for work!
+## Current
+
+- 👨‍💻 @ [Risk Harbor](https://riskharbor.com/)
+- 💻 @ UC Berkeley
 
 ## Previous
 
-👨‍💻 @ [Risk Harbor](https://riskharbor.com/)  
-👨‍💻 @ NSA  
-💻 @ UC Berkeley
+- 👨‍💻 @ NSA
