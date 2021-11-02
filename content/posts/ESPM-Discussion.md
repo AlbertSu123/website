@@ -273,6 +273,102 @@ California had difficulty in development because all of the resources we had req
 “Every resource sector has its own rich story of dominion over nature”
 California mining equipment was exported widely and it was used in trading with Australia to South Africa
 California’s innovation and capitalism is intrinsically linked since the development came from extractive technologies, manufacturing, etc
+Chinese Migration Terms
+Rural Migration - the migratory pattern of peoples from rural areas into urban areas
+Sojourn Settlemenet - moving temporarily to one place
+Chain Migration - people moving from one country to another in a consistent form
+Push/Pull Factors, means
+
+# Chinese Migration
+## Gold Mining
+- Extractive cycle of reproduction
+  - Mining -> Declining Productivity -> Extensification(Change in mining locations) -> Intensification(Change in tech and increase in capital costs) -> Change in labor regime
+- Placer Mining 1848-1853 Extracting gold from bottom of rivers
+- Hydraulic mining: 1852 Shoot cannons at rocks
+- Hard Rock mining - go into areas using lumber as support
+- River dredging - digging up bottoms of rivers
+
+## Takaki(Overblown with hope)
+- America's Errand into the Wilderness
+- Territorial control and resource development
+- Capital and Asian labor in the west: Abundant resources, scarce labor
+- Race and class in the west: divide and control strategies, segmentation in jobs, remuneration, status, forms of incorporation
+
+## People vs Hall
+- Hall(white man) was found guilty and sentenced to hang,
+- Halls lawyer appealed the verdict saying chinese testimony was prohibited under state Criminal proceeding act saying 
+- Thus, hall decision reverted since chief justice said chinese are like mulatos, cannot testify against whites
+
+## Building the transcontinental railroad
+- Railroad gave chinese opportunities for wages and equal status, drawback was high risk
+- Chinese written out of the story when the road was completed
+
+## Why were the Chinese brought in to work on the railroads? Initially why was there not much opposition to their inclusion in the working-force? (b) Why did this change? What provoked the intense anti-chinese sentiments seen in the 1870s and 1880s and later?
+- labor shortage in the US
+- Chinese desired as cheap laborers (willing to work for less)
+- Paid for housing and mining taxes
+- Irish: $35 a month + $15-20 food and shelter vs Chinese: $25-35 a month, self boarding ($13-$18)
+- Chinese niche production
+- Effectively hard labors who are essential to the capital
+- Chinese willing to work in dangerous jobs, Hard working, skilled, learn quickly
+- Location and convenience
+- Central Pacific needed to build railroad in Sacramento eastward, and there was already a large Chinese population in northern California
+- Access to labor was a challenge during civil war period
+
+- anti- chinese sentiment
+  - White laborers began to feel that Chinese diligence forced everyone to work harder for less reward
+  - foreign miners tax -> discourage those already working in the gold mines (pay a license fee to work on mining claim)
+  - people v. hall -> Chinese could not testify in court; led to vigilante violence
+  - Chinese laborers received less and less pay, started holding strikes
+
+## Define and contextualize “Errand into the Wilderness” era in the American West. How did it compare with the Agrarian Myth and Prospector Capitalism?
+- The errand into the wilderness reflects an ideology of colonial control and development rather than conquest 
+- ideological way of rationalizing colonial control and development rather than just simply conquest of land
+- Socio and socio-economic and moral progress, also rationalized racial separation
+- The errand into the wilderness is in many ways, building upon manifest destiny, but is distinct in that territorial control bringing progress, moral and economic to the West through the development of resources and the growth of industry
+- it's about exploiting resources and it's based on racialized wage labor system as the basis of resource development
+- the American West was a very diverse landscape, and the late 19th century, very important here in terms of the expansion of sort of imperial interests throughout the world
+
+### agrarian myth 
+- more centered around claiming land and developing that land
+- agrarian myth is about the individual engaged in Lockean labor that's associated with settlement and leads to that individual getting a stake in society. This underpins a relatively equitable distribution of land and other resources. And it's the basis for broadly construed and strong democracy
+- Similarity between the agrarian myth and errand into the wilderness:
+- they are both calling for cultural and physical transformation. Transformation of nature as the basis of social organization and production and creating a vibrant economy. 
+- Prospector capitalism (Walker): Large-scale development and small-scale prospecting in the development of a dynamic economy in California. They used their own labor and accumulate a good among of capital and then can move past the phase of prospecting and begin reproducing their situation. 
+- Errand into the wilderness is more focused on recruiting outside labor whereas prospector capitalism is a more individual process that resulted in faults
+
+## Describe the process of “divide and control” as applied to the labor force of the American West. Which ethnic groups were most affected and how? How did the “Errand into the Wilderness” era affect labor overall?
+- Include different groups of people (by ethnicity) so that the workforce is fragmented and are less likely to unite and push for higher wages / better conditions 
+- Divide and control example: Irish vs Chinese railroad workers during gold rush era (exploitation of natural resources)
+- Social separation between different ethnic groups - Chinese (lower status, cheap labour) and Irish.
+- Eventual hierarchy among the groups, where Irish workers are pushed higher up from more minorities joining
+- Stereotypes about Chinese people made them desirable expendable workers 
+- “Errand into wilderness” created very high demand for labor (idea that hard work leads to success in America), so minorities (including Chinese) were initially welcomed, and the racial divide in the workforce convenient later
+
+## Describe some key technological innovations of the time. What projects did they enable? How did those projects change the need for labor?
+### Steamships
+- Enabled faster travel, specifically for the immigation from Asia
+- The steamship allowed the passage to only take three weeks while the previously used clipper ships took two to three months. 
+- Monitor Cannon: lead to the development of hydraulic mining but causing deforestation and fires due to piping in massive amounts of water for the purposes of mining.  
+- Used water to blast with tremendous force which allowed access to new mineral sources. Blasting sides of mountains away, and then putting the same kind of technology as earlier mining practices into slews boxes to separate and using a lot more mercury to separate gold. 
+- Chinese implemented traditional methods including using explosives and lower people down a mountain side in baskets 
+- These tactics allowed for the development of mountain sides and for more efficiency when tunneling through mountains 
+- Refrigeration, electricity, etc.
+- River Dredging was a new type of technology introduced through the need for new mining practices after resources had been exhausted
+- Increased need for skilled workers lead to expansion of technology in explosives which allowed for faster and more efficient hard rock mining 
+- Widely used in the construction of the transcontinental railroad
+- Transcontinental railroad: Faster travel across the country, Faster transportation of goods across the country, Faster travel of information and communications
+- More technology made it so a market for capital investment is created and therefore an increased need for labor
+
+## Describe instances of new “Crises of Reproduction” in the American West. How were these crises overcome? Were there repercussions?
+- Mercury released -> Damaged soil and fish -> Bioaccumulation of mercury in fish 
+- Hydraulic mining led to flooding and heavy metal poisoning that ruined agriculture -> Sawyer decision banned hydraulic mining because of that -> Hill erosion → changed the landscape
+- Solved by moving mining to outside of north america 
+- Timber used for building everything
+- Fuel and hard rock mining
+- Led to deforestation and destroying ecosystems
+- Unsustainable logging practices -> Cause them to go farther and farther away for lumber
+
 
 ## Remaining Questions
 
