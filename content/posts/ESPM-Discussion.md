@@ -361,7 +361,7 @@ Push/Pull Factors, means
 - More technology made it so a market for capital investment is created and therefore an increased need for labor
 
 ## Describe instances of new “Crises of Reproduction” in the American West. How were these crises overcome? Were there repercussions?
-- Mercury released -> Damaged soil and fish -> Bioaccumulation of mercury in fish 
+- Mercury released -> Damaged soil and fish -> Bio-accumulation of mercury in fish 
 - Hydraulic mining led to flooding and heavy metal poisoning that ruined agriculture -> Sawyer decision banned hydraulic mining because of that -> Hill erosion → changed the landscape
 - Solved by moving mining to outside of north america 
 - Timber used for building everything
@@ -369,7 +369,31 @@ Push/Pull Factors, means
 - Led to deforestation and destroying ecosystems
 - Unsustainable logging practices -> Cause them to go farther and farther away for lumber
 
+# Japanese Immigration
+## California Delta
+- Poor site, but great situation for agriculture development
+- Chinese tenancy in the California delta was an anomaly of the chinese being able to be a tenant of land
+- Wheelbarrow brigade, helped in building levees and docs
+- Planted a diversity of crops that could survive the high water table(pears, veggies, grains)
 
+## Japanese Tenancy
+- Japanese Tenancy was more common than Chinese
+- Gentlemen's Agreement (1907) - Japanese govt restricted emigration of single male laborers so Japanese Children could continue attending schools and Japanese families could emigrate.
+- Alien Land Law - barred land ownership longer than 3 years, in 1920 banned leasing to aliens
+- Land access strategies to acquire land with loopholes in legislation, ie using US born children names
+
+## Reclamation and Farming in the California Delta:
+Discuss the dynamics of large and small scale capital and labor in the development of Natural Resources, and compare how prospector capitalism and the errand into the wilderness offer valuable frameworks for understanding these dynamics:
+- Errand into the wilderness: 
+- How the chinese fit into the system: Labor first and capital second
+- The errand into the wilderness reflects an ideology of colonial control and development rather than conquest. Ideological way of rationalizing colonial control and development rather than just simply conquest of land. Socio and socio-economic and moral progress, also rationalized racial separation
+- The errand into the wilderness is in many ways, building upon manifest destiny, but is distinct in that territorial control bringing progress, moral and economic to the West through the development of resources and the growth of industry
+- it's about exploiting resources and it's based on radicalized wage labor system as the basis of resource development
+- Prospector Capitalism: Large-scale development and small-scale prospecting in the development of a dynamic economy in California. They used their own labor and accumulate a good among of capital and then can move past the phase of prospecting and begin reproducing their situation. 
+
+## How would you compare the Chinese Exclusion Act VS. The Gentleman’s Agreement?
+Chinese Exclusion Act - more formal, banned chinese labor immigration, china had a weak government
+Gentleman’s Agreement - Japanese govt had more power
 ## Remaining Questions
 
 1. Not superior to others -> Who isn't superior to others?
