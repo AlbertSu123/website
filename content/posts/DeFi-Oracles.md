@@ -4,7 +4,7 @@ date: "2021-10-14T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "Oracles"
-category: "DeFi Lecture Notes"
+category: "DeFi Notes"
 tags:
   - "Notes"
   - "DeFi"

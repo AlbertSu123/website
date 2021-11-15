@@ -394,6 +394,21 @@ Discuss the dynamics of large and small scale capital and labor in the developme
 ## How would you compare the Chinese Exclusion Act VS. The Gentleman’s Agreement?
 Chinese Exclusion Act - more formal, banned chinese labor immigration, china had a weak government
 Gentleman’s Agreement - Japanese govt had more power
+
+# Unit 3 Review
+## Takaki Errand into the Wilderness
+- Requires proletarianized labor force
+- Asian labor(chinese filipino, japanese)
+- divide and control strategies
+
+## Chinese and Japanese immigration
+- Chinese: male sojourners, few families, mining, railroads, docile hardworking, outsiders, chinese urbanization and economic decline
+- Japanese: more women and families, field labor, tenancy, rural upward mobility
+
+## Hate Crimes toward Asian Americans
+- 9k attacks in the US during pandemic
+- Top 6: New York, Los Angeles, Boston, Seattle, San Jose, San Francisco
+
 ## Remaining Questions
 
 1. Not superior to others -> Who isn't superior to others?

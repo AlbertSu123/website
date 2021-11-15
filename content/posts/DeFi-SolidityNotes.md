@@ -4,7 +4,7 @@ date: "2021-10-18T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "solidity-notes"
-category: "Solidity Notes"
+category: "DeFi Notes"
 tags:
   - "Notes"
   - "Solidity"
