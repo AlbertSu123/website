@@ -1,5 +1,5 @@
 ---
-title: Rename this later
+title: Ideas on Tech
 date: "2021-11-10T23:46:37.121Z"
 template: "post"
 draft: false
@@ -9,7 +9,7 @@ tags:
   - "List"
   - "UC Berkeley"
 
-description: "List of free resources at UC Berkeley"
+description: "List of ideas and links related to tech"
 socialImage: "/media/image-2.jpg"
 ---
 
@@ -19,7 +19,7 @@ socialImage: "/media/image-2.jpg"
 - Join Facebook Group to get names of people that go to a certain university
   Use chrome extension that allows you to get people's email given organization, first and last name
   Make a mass email list in hours.
-- Can you hash people's faces into something unique and robust? 
+- Can you hash people's faces into something unique and robust?
 
 ## University Related
 
@@ -44,12 +44,14 @@ socialImage: "/media/image-2.jpg"
 - Blind top 75: https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 - System Design Framework: https://www.teamblind.com/post/Willing-to-help-for-system-design-xQQ5u63y
 
-## Learning Tech Stuff 
+## Learning Tech Stuff
+
 - Web dev tutorial: https://www.theodinproject.com/
 - SQL tutorial: https://mystery.knightlab.com/
 - No code websites: https://www.nocode.tech/
 
 ## Misc
+
 - Places to shill at: https://www.notion.so/logology/Where-to-post-your-project-4b6b9c20d7d7462f871e7e71b6449f62
 - Polygraph stuff: https://antipolygraph.org/documents/dodpi-interrogation.pdf
 - Notebook fan control: https://github.com/hirschmann/nbfc/wiki/FAQ
@@ -58,8 +60,9 @@ socialImage: "/media/image-2.jpg"
 - Networking with people: https://bryanwang.substack.com/p/a-guide-to-authentic-networking
 
 # Long form
+
 - **Toxicity in Computer Science:**
-    - A lot of people get into software because the computer understands them. The computer doesn't make faces that you don't understand or behave in ways that are unpredictable. So you spend more time with the computer than people. The software doesn't make fun of you or talk about you behind your back.
-    - Then as you grow older and enter college you meet hundreds of other people just like you. And now all of the social deficiencies that you had in high school are celebrated as eccentricities. So you are pushed even further away from people and into the world of software. And in this world the only thing that matters is your grade on the assignment. Nobody grades you how well you are liked personally by your peers.
-    - Then you enter the workforce and you are a rockstar. You're making more money out of the gate than most of your high school friends who majored in communication or business. And the more you learn, the more money you make. You buy a new car, you get a better apartment. And you must be smart because you look back at all of the people who made fun of you in high school and they are working at an insurance company for $16 an hour and you think : "I always knew I was smarter than them."
-    - So when someone asks a question on Reddit or Stackoverflow you jump on them because why can't they see it? It's obvious. Maybe they shouldn't be in this profession because they can't compete with how very smart you are.
+  - A lot of people get into software because the computer understands them. The computer doesn't make faces that you don't understand or behave in ways that are unpredictable. So you spend more time with the computer than people. The software doesn't make fun of you or talk about you behind your back.
+  - Then as you grow older and enter college you meet hundreds of other people just like you. And now all of the social deficiencies that you had in high school are celebrated as eccentricities. So you are pushed even further away from people and into the world of software. And in this world the only thing that matters is your grade on the assignment. Nobody grades you how well you are liked personally by your peers.
+  - Then you enter the workforce and you are a rockstar. You're making more money out of the gate than most of your high school friends who majored in communication or business. And the more you learn, the more money you make. You buy a new car, you get a better apartment. And you must be smart because you look back at all of the people who made fun of you in high school and they are working at an insurance company for $16 an hour and you think : "I always knew I was smarter than them."
+  - So when someone asks a question on Reddit or Stackoverflow you jump on them because why can't they see it? It's obvious. Maybe they shouldn't be in this profession because they can't compete with how very smart you are.

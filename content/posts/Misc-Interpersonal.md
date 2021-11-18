@@ -1,5 +1,5 @@
 ---
-title: Rename this later
+title: Random Interpersonal Ideas[Rename post lol]
 date: "2021-11-10T23:46:37.121Z"
 template: "post"
 draft: false
@@ -9,7 +9,7 @@ tags:
   - "List"
   - "UC Berkeley"
 
-description: "List of free resources at UC Berkeley"
+description: "Random Ideas"
 socialImage: "/media/image-2.jpg"
 ---
 
@@ -42,10 +42,12 @@ socialImage: "/media/image-2.jpg"
 # Longer stuff
 
 - **Time Management:**
+
   - My advice might be different than what you are expecting but try to think of your problem from a different angle. Let me explain: you’re currently seeing your problem as how to optimize your internship search but you’ve implicitly assumed that you’re going to dedicate your time primarily to school and secondarily to finding an internship.
   - I would suggest freeing up 100% of your time as a thought experiment and then only take actions that contribute to your goal. If your goal is grad school, you might need to keep your GPA up a bit higher, and that means you can’t do as many interesting projects and look for internships. However, if your goal is a job after graduation then think of your resume as your primary goal, and if your classes align with that, spend more time engaging with those classes. If they don’t, then miss an assignment or just do the main parts and sacrifice the points.
   - For me, once I saw school as secondary and my projects and portfolio as primary, I found I was more interested in my coursework because I saw it as something that would help me solve my real problems, and I absolutely blew away the projects I was assigned because I didn’t just care to fulfill the requirements, but also to present the projects as impressive and relevant to industry on my website and github.
   - Furthermore, I found that this method keeps me much more interested, which is a more correlated with success and retention, and so I became much more productive, and was able to still keep up my other extra curricular commitments. YMMV.
+
 - **On meaning: One always finds one's burden again.**
   - Camus uses Sisyphus as a metaphor to describe our absurd existence. Like Sisyphus, we are in a constant cycle of striving for purpose and discovering that it is all devoid of meaning. In Sisyphus' case, the gods condemned him to this task with the idea that all his efforts will be futile, the punishment being that he puts forward a monumental effort for nothing. However, it is not up to the gods to determine what gives Sisyphus purpose. Sisyphus can find meaning in this task if he so chooses, and by finding meaning in this task, he revolts against the gods who want him to suffer. Likewise, we are faced with the Absurd; a universe seemingly without objective meaning. By responding to this with our own subjective meaning, we revolt against the Absurd.
   - "The struggle towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy."

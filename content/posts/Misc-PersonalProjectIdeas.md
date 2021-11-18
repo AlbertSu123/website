@@ -9,7 +9,7 @@ tags:
   - "List"
   - "UC Berkeley"
 
-description: "List of free resources at UC Berkeley"
+description: "Ideas for fun projects"
 socialImage: "/media/image-2.jpg"
 ---
 
