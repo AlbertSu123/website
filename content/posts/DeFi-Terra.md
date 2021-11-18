@@ -14,6 +14,19 @@ socialImage: "/media/image-2.jpg"
 ---
 
 # Getting a wallet
+
+# Projects to look into
+
+## Anchor
+## Pylon
+## Mirror
+## Orion Money
+## TerraSwap
+## Kash: user-friendly interface to access Mirror and Anchor
+## LoTerra: decentralized lottery
+## Alice Finance: front-end interface for the Terra product suite
+## Spar Protocol: decentralized on-chain asset management protocol
+
 ENS
 Alchemix
 Terra Anchor
