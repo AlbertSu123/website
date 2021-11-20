@@ -1,9 +1,9 @@
 ---
-title: Random Interpersonal Ideas[Rename post lol]
+title: Misc Notes
 date: "2021-11-21T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "Free"
+slug: "misc-notes"
 category: "Misc"
 tags:
   - "List"

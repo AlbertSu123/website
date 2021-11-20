@@ -3,7 +3,7 @@ title: Ideas on Tech
 date: "2021-11-20T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "Free"
+slug: "tech-ideas"
 category: "Misc"
 tags:
   - "List"

@@ -3,7 +3,7 @@ title: Free Resources at UC Berkeley
 date: "2021-11-10T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "Free"
+slug: "free-resources"
 category: "Misc"
 tags:
   - "List"

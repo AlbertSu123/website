@@ -3,7 +3,7 @@ title: Logistic Regression
 date: "2021-10-21T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "cross-validation-and-regularization"
+slug: "logistic-regression"
 category: "Data Science Notes"
 tags:
   - "Notes"
