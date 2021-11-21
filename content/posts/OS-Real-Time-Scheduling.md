@@ -25,13 +25,5 @@ The software that runs the brakes in your car or autopilot on an airplane must w
   - **Earliest Deadline First:** Choose the task that has the earliest deadline first. However, this won't always work with the given tasks due to it requiring both I/O and computation. Thus, always break tasks down into shorter units and use the deadlines of the shorter units.
   - **Priority Donation:** The problem of *priority inversion* occurs when a higher priority thread must wait for a lower priority thread to complete its work. This can be solved via Priority Donation, where a higher priority thread that is waiting for a lower priority thread donates its priority to the lower priority thread, allowing it to run and finish using that resource.
 
-# Overload Management
-
-## Motivation
-Your cupcake startup has just pitched on shark tank and has gotten more traffic than you can handle, should you?
-  - A) Let all users experience tons of lag since the server cannot serve all the requests since the waiting time dramatically increased? ie cars on a highway
-  - B) Turn away requests after you have reached the maximum capacity you can support. ie eating at a restaurant
-  - C) Reduce the service time per request by turning the service into a simpler version. ie CNN turning their normal site to a static site after 9/11
-
 # Questions to ask
 1. For priority donation, do you actually change priority values by subtracting from the priority of the higher priority thread and adding to the priority of the lower priority thread or do you just set the lower priority thread's priority to the priority of the higher priority thread?
