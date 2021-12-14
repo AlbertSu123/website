@@ -183,7 +183,7 @@ Goals:
 
 ### FAT Filesystem
 
-![File allocation table](/media/File-Systems/FAT.JPG)
+<!-- ![File allocation table](/media/File-Systems/FAT.JPG) -->
 
 - **Techniques** Uses a extremely simple index structure(linked list). FAT stands for file allocation table, its array of 32 bit entries in a reserved area of the volume. Each file corresponds to a FAT entry in the array, which is either the last block or contains a pointer to the next block.
 - **Directories** map file names to file numbers. The file's number is the index of the file's first entry in the FAT. We can then parse the linked list to find the rest of the file's blocks.
@@ -193,7 +193,7 @@ Goals:
 
 ### Unix Fast File System(FFS)
 
-![Multilevel index](/media/File-Systems/multilevel-index.JPG)
+<!-- ![Multilevel index](/media/File-Systems/multilevel-index.JPG) -->
 
 - **Techniques** FFS uses a carefully structured tree that locates any block of a file that is efficient for both large and small files. Each file is a tree with fixed size blocks as its leaves. Each file's tree is rooted in an _inode_ that contains the file metadata.
   - Typically the file's inode contains 15 pointers: the first 12 pointers are direct pointers that point directly to the first 12 data blocks of a file
@@ -205,7 +205,7 @@ Goals:
 - **Free Space Management** FFS allocates a bitmap with one bit per storage block, the ith bit in the bitmap indicates whether the ith block is free or in use.
 - **Locality Heuristics** FFS uses block group placement and reserved space
   - _block group placement_ divides the disk into block groups so the seek time between any blocks in a block group will be small  
-    ![Block Group Placement](/media/File-Systems/block-group-placement.JPG)
+    <!-- ![Block Group Placement](/media/File-Systems/block-group-placement.JPG) -->
   - Each block group holds a portion of the metadata structures
   - FFS puts a directory and its files in the same block group
   - Within a block group, FFS writes to the first free block in the file's block group. This helps locality in the long term since fragmentation is reduced
@@ -214,7 +214,7 @@ Goals:
 ### Windows New Technology File System(NTFS)
 
 Instead of using fixed trees like FFS, NTFS uses extents and flexible trees
-![NTFS index record](/media/File-Systems/nfts-index-record.JPG)
+<!-- ![NTFS index record](/media/File-Systems/nfts-index-record.JPG) -->
 
 - **Extent** variable sized regions of files that are stored in a contiguous region on the storage device
 - **Flexible tree and master file table** Each file in NTFS is represented by a variable depth tree. The extent pointers for a file with a small number of extents can be stored in a shallow tree, deeper trees are only needed if the file becomes badly fragmented.
@@ -241,7 +241,7 @@ When updating an existing file, COW file systems do not overwrite existing data 
   - Large DRAM caches can handle essentially all file reads, thus the cost of writes dominate performance so optimizing write performance is the number one priority.
   - Flash storage works better with copy on write: there is no need to clear the erasure block and it writes data to a different location instead of overwriting the current data wearing out the flash drive evenly
   - Since old data isn't overwritten, we can support versioning
-    ![Copy on Write](/media/File-Systems/copy-on-write.JPG)
+    <!-- ![Copy on Write](/media/File-Systems/copy-on-write.JPG) -->
 - **Implementation:** We store inodes in a file rather than in the inode array. All the file system's contents are stored in a tree rooted in the root inode, when we update a block, we write the block and all of the blocks on the path from it to the root to new locations.
 
 ### ZFS file system
@@ -253,7 +253,7 @@ When updating an existing file, COW file systems do not overwrite existing data 
 
 ## File and Directory Access Walkthrough
 
-![Walkthrough](/media/File-Systems/walkthrough.JPG)
+<!-- ![Walkthrough](/media/File-Systems/walkthrough.JPG) -->
 Goal: Read the file /foo/bar/baz
 Steps:
 

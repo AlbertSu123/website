@@ -409,6 +409,11 @@ Gentleman’s Agreement - Japanese govt had more power
 - 9k attacks in the US during pandemic
 - Top 6: New York, Los Angeles, Boston, Seattle, San Jose, San Francisco
 
+## Oakland Equity Climate Action Plan
+- Housing: Create housing protection for low income renters
+- Food: Help distribute food(food pantries) and supporting local food production
+- Green Economy: award 50% of city contracts to local businesses. 
+
 ## Remaining Questions
 
 1. Not superior to others -> Who isn't superior to others?

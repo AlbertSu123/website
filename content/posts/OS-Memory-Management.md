@@ -125,7 +125,7 @@ Persistent Storage devices like SSDs or Magnetic Disks can hold much more memory
 
 ## Magnetic Disk
 
-![Magnetic Disk](/media/Memory-Management/magneticdisk.JPG)
+<!-- ![Magnetic Disk](/media/10-Memory-Management/magneticdisk.JPG) -->
 **Description:** Each disk drive holds one or more platters, which are the CD looking things that hold up the magnetic material. When the disk drive powers up, the platters are constantly spinning on the pole. The disk head reads/writes data by sensing or introducing a magnetic field on a surface. Since the platter is spinning very fast, it generates a layer of rapidly spinning air, which lets the disk head float close to the magnetic material without touching it. If the disk head does touch the material, this is known as a _disk crash_. This can happen when you drop a running magnetic disk.
 
 The data itself is stored in 512 byte sectors, the disk drive must read and write the entire sector even if it only wants to change a single byte in the sector.
@@ -149,7 +149,7 @@ To go from a request to data, the disk must first seek the right track, wait for
 
 Flash storage is now used for laptops, machine room servers, phones, cameras, thumb drives, and everything in between. Flash storage is a type of **solid state storage**, it has no moving parts and stores data using electrical circuits. It has much better random I/O, use less power, and is less vulnerable to physical damage.
 
-![Solid State Drive Element](/media/Memory-Management/solid-state-drive.JPG)
+<!-- ![Solid State Drive Element](/media/10-Memory-Management/solid-state-drive.JPG) -->
 Each flash storage element is a floating gate transistor. Since the floating gate is surrounded by an insulator, it can hold an electrical charge for months or years without requiring power. Even though it is not connected to anything, it can be charged or discharged via electron tunneling by running a sufficiently high-voltage current near it. Thus, the floating gate state can be detected by applying an intermediate voltage to the transistor control gate that will only be sufficient to activate the transistor if the floating gate is changed.
 
 ### Access and Performance
