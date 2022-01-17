@@ -1,0 +1,5 @@
+Hi y'all, I'm Albert! I was originally born in Canada but I moved to the states(California) when I was young and have been living in the bay area for basically my whole life. I honestly don't have any important experiences that have happened in my life, to be honest, it's been pretty cookie cutter though I'm working on changing that 😅. Case in point: I'm a 3rd year Computer Science Major
+
+I'm pretty passionate about decentralized finance and would love to hear other people's ideas and opinions about the space. Specifically, I'm interested in decentralized automated insurance, where we can replace complex claims arbitration with simple code that automatically pays out the amount you are entitled to without having to file claims. I'm also interested in creating decentralized markets for voting power that solves the third party voting problem.
+
+I'm interested in the collaborative innovation class since I think it would be a cool way to meet cool people that are working/will work on cool things. I honestly don't know too much else about the class, but the syllabus and videos looks promising

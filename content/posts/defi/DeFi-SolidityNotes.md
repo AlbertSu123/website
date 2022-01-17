@@ -1,6 +1,6 @@
 ---
 title: Random Solidity Notes
-date: "2021-10-18T23:46:37.121Z"
+date: "2021-12-30T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "solidity-notes"
