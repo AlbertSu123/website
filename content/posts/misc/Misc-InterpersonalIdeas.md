@@ -1,6 +1,6 @@
 ---
 title: Misc Notes
-date: "2021-11-21T23:46:37.121Z"
+date: "2025-11-21T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "misc-notes"
@@ -15,12 +15,6 @@ socialImage: "/media/image-2.jpg"
 
 # Useful stuff
 
-- If you really want to connect with someone, take them for a long, scenic walk. Not being face to face takes some of the pressure off, and the scenery puts you in the right mood to open up.
-- If you haven't used your voice in a while (sleeping, lonely, etc) and suddenly need to take a phone call, hum for a few seconds prior. Your vocal cords won't let you down.
-- If you want to offer a deep and memorable compliment, ask someone how they did something. It gives them the opportunity to tell their story, and shows your genuine interest.
-- When complementing people, always compliment them on something they have earned, not something they have.
-- When you’re leading a conversation, it’s very good to invite other people who might be more quiet by asking them what they think or joking with them.
-- Fully commit to friendly gestures, such as high fives, back pats, shoulder touches. Fully committing matters as it shows more confidence but also helps with being more trustworthy.
 - Get people to contribute to an idea and they will be more likely to accept it. Studies show that it doesn't take that much involvement in the creative process to get people to take possession of a proposed plan.
 - Use youtube transcript to find specific words in the video to watch that part of the video
 - Easy way to get people to like you
@@ -30,6 +24,12 @@ socialImage: "/media/image-2.jpg"
   You: Wow, that's so hard!
   Them: Blah Blah Blah <-- They like you know because you rubbed their ego
 - Why not faster? Why can't we build this startup/finish this homework/learn this skill faster?
+- If you really want to connect with someone, take them for a long, scenic walk. Not being face to face takes some of the pressure off, and the scenery puts you in the right mood to open up.
+- If you haven't used your voice in a while (sleeping, lonely, etc) and suddenly need to take a phone call, hum for a few seconds prior. Your vocal cords won't let you down.
+- If you want to offer a deep and memorable compliment, ask someone how they did something. It gives them the opportunity to tell their story, and shows your genuine interest.
+- When complementing people, always compliment them on something they have earned, not something they have.
+- When you’re leading a conversation, it’s very good to invite other people who might be more quiet by asking them what they think or joking with them.
+- Fully commit to friendly gestures, such as high fives, back pats, shoulder touches. Fully committing matters as it shows more confidence but also helps with being more trustworthy.
 
 # Not Useful stuff
 

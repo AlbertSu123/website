@@ -1,6 +1,6 @@
 ---
 title: Personal Project Ideas
-date: "2021-11-10T23:46:37.121Z"
+date: "2025-11-10T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "personal-project-ideas"

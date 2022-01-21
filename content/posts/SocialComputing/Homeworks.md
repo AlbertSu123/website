@@ -1,0 +1,13 @@
+1. Write (or you can use your voice) a few sentences about yourself: your name, your year, your major (or what you intend to major in), and why you are taking this course (this can be anything from "I need to satisfy X requirement to graduate" to philosophical ruminations on technology to your personal experiences with computers and social media). In addition to your description about yourself, please add a digital photo of yourself. If you're not comfortable adding a photo of yourself, add a photo of, say, the view from the window of where you are currently at. 
+
+Hi y'all, I'm Albert, a third year majoring in Computer Science. I think I'm taking this course for a requirement, but I'm not too sure which requirement it was so the requirement probably isn't that important. 
+
+2. The course is titled "The Social Life of Computing." What does the term "computing" mean to you? Is "computing" the same thing as "computers"? Explain what you think the difference between the two terms is and why it matters (or if there is no difference). 
+
+To me, computing means using anything other than our brains in a structured manner to store or do calculations with information. I'm not sure, but I'm guessing computing is the verb and computers is the noun, computing is done by computers. There isn't too much of a difference between the two terms besides the part of speech.
+
+3. How much are you acquainted with the history of computing and the history of computers? Are they different? In your opinion, is there value to learning history, especially the history of technology?  Give an example of something historical that you think is relevant today and explain why (ideally about computing or computers, but doesn't have to be). 
+
+I don't know much about the history of computing or computers, besides the brief visit I had to the computer history museum in San Jose, CA and whatever I picked up in Computer Science courses here at Berkeley. I think the main value to learning history, especially the history of technology is to appreciate the design decisions that went into building things.
+
+4. Last but not the least, pick a fellow student's post that resonated with you (more than one, if you like). It could be because you agree with them; or you disagree with them (or because you simply liked the view from their window). Click on the "Reply" button underneath their post and respond to their post constructively indicating your agreement/disagreement/reaction. 
