@@ -46,3 +46,4 @@ socialImage: "/media/image-2.jpg"
 - Use student loan pricing data from places like SoFi to create school rankings
 - Scaling Gracepoint, article on how they did it
 - Pretend to be a student to ask recruiters to rank most prestigious company, most prestigious school as a part of a survey
+- Article on zkproofs https://www.youtube.com/watch?v=fOGdb1CTu5c
