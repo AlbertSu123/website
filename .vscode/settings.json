@@ -3,5 +3,10 @@
         "empted",
         "MLFQ",
         "rebalance"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#422623",
+        "titleBar.activeBackground": "#5C3631",
+        "titleBar.activeForeground": "#FCFAF9"
+    }
 }

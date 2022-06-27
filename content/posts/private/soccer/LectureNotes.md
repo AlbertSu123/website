@@ -1,17 +1,3 @@
----
-title: Lecture 1
-date: "2021-01-18T23:46:37.121Z"
-template: "post"
-draft: false
-slug: "Lecture-1"
-category: "Soccer Lecture Notes"
-tags:
-  - "Notes"
-  - "Soccer"
-
-description: "First class for HIST 190"
-socialImage: "/media/image-2.jpg"
----
 # Lecture 1 - Intro
 ## Class Content
 
@@ -98,6 +84,5 @@ Pozzo and the italian diaspora
 - Germanisation of the game, ethnic cleansing of Jews in the game, eg kurt lander @ Bayern Munich
   - Clubs cleansed of Anglo names, links to churches or labor movement
   - Foreign player ban in 1933
-- Amateurism imposed in AUstria 1938 and disbandment of Hakoah Vienna
+- Amateurism imposed in Austria 1938 and disbandment of Hakoah Vienna
 - Nazi Olympics 1936 and Hitler's first and last game
-# Questions

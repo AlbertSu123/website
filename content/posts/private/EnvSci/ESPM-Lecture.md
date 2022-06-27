@@ -1,18 +1,3 @@
----
-title: ESPM 50AC Lecture Notes
-date: "2021-08-20T23:46:37.121Z"
-template: "post"
-draft: false
-slug: "espm50ac-lecture-notes"
-category: "ESPM50AC Notes"
-tags:
-  - "Notes"
-  - "ESPM50AC"
-  
-description: "All Lecture notes for ESPM 50AC"
-socialImage: "/media/image-2.jpg"
----
-
 # Unit 2-Native Americans
 ## Federal Trust Doctrine
 Theory: Guardianship Theory, tribes need a guardian.

@@ -66,3 +66,14 @@ socialImage: "/media/image-2.jpg"
   - Then as you grow older and enter college you meet hundreds of other people just like you. And now all of the social deficiencies that you had in high school are celebrated as eccentricities. So you are pushed even further away from people and into the world of software. And in this world the only thing that matters is your grade on the assignment. Nobody grades you how well you are liked personally by your peers.
   - Then you enter the workforce and you are a rockstar. You're making more money out of the gate than most of your high school friends who majored in communication or business. And the more you learn, the more money you make. You buy a new car, you get a better apartment. And you must be smart because you look back at all of the people who made fun of you in high school and they are working at an insurance company for $16 an hour and you think : "I always knew I was smarter than them."
   - So when someone asks a question on Reddit or Stackoverflow you jump on them because why can't they see it? It's obvious. Maybe they shouldn't be in this profession because they can't compete with how very smart you are.
+
+# Cool projects from eth hackathons
+https://ethglobal.com/showcase/safenode-shtqy
+https://ethglobal.com/showcase/2inch-wxtu0
+https://ethglobal.com/showcase/freedombridge-fcab4
+https://ethglobal.com/showcase/cross-margin-engine-for-derivatives-zgy04
+https://ethglobal.com/showcase/sdao-sorition-based-dao-gjcbr
+https://ethglobal.com/showcase/leverage-yield-yf3a4
+https://ethglobal.com/showcase/sheeth-the-wallet-condom-pvq8n
+https://ethglobal.com/showcase/nested-amm-uwe1a
+https://ethglobal.com/showcase/decentra-date-j6u9t

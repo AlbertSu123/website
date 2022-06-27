@@ -16,3 +16,12 @@ Example:
 2. Drew wants to sell 100 ETH. Order size 0 ETH
 3. Max wants to buy 10 ETH. Order size +10 ETH
 The batch order of buy 10 ETH would then be submitted
+
+## Overview of MEV
+- Frontrunning
+- arbitrage
+- Liquidations
+- Generalized Frontrunning: replacing profitable tx with 
+### Liquidations
+- Whoever gets the liquidation first gets the money
+- Liquidate position, market dump tokens

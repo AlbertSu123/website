@@ -42,3 +42,15 @@ Squeeth, Tracer, https://zeta.markets/. The later two aren't really power future
 
 - Are these markets priced by spot? Do they reflect alpha in spot?
 Squeeth is underfunded, so people buy squeeth to hedge volatility future. Selling squeeth gives you positive EV, not enough liquidity in market for other side. No one wants to sell volatility. If there was a liquid options market, then you can hedge squeeth. In theory you can buy options and sell squeeth, and volatility, skewness hedged and set as options market maker.
+
+## Quanto Derivatives
+Derivative that is settled in a different reference currency. 
+- Anchor protection settled in usdc vs anchor protection settled in ust
+Why do the premiums cost a different amount.
+
+Why isn't there another instrument that could close the gap in premiums between these products?
+You are paying for more protection
+
+When the euro collapsed, greece, italy, spain defaulted. Two types of cds, one denominated in euros and one denominated in usd. The usd premiums are much more expensive than the cds premiums denominated in euros because if greece defaulted on their loans, the euro is more likely to collapse as well
+
+Effect of lower price of euros

@@ -1,19 +1,3 @@
----
-title: ESPM 50AC Final Project
-date: "2021-08-20T23:46:37.121Z"
-template: "post"
-draft: false
-slug: "espm50ac-final-project"
-category: "ESPM50AC Final Project"
-tags:
-  - "Project"
-  - "Decal"
-  - "ESPM50AC"
-
-description: "Final Project for ESPM 50AC - A Decal"
-socialImage: "/media/image-2.jpg"
----
-
 ## Deliverables:
 
 - Syllabus
