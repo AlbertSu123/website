@@ -1,3 +1,18 @@
+---
+title: The Merge
+date: "2021-12-30T23:46:37.121Z"
+template: "post"
+draft: false
+slug: "borrow"
+category: "crypto"
+tags:
+  - "Notes"
+  - "Crypto"
+  - "ethereum"
+
+description: "A quick primer on the merge for ethereum 2.0"
+socialImage: "/media/image-2.jpg"
+---
 # The Merge
 Transition from Proof of Work to Proof of stake
 

@@ -1,3 +1,19 @@
+---
+title: Cosmos
+date: "2021-12-30T23:46:37.121Z"
+template: "post"
+draft: false
+slug: "borrow"
+category: "crypto"
+tags:
+  - "Notes"
+  - "Crypto"
+  - "cosmos"
+
+description: "A deep dive into cosmos"
+socialImage: "/media/image-2.jpg"
+---
+
 ## Cosmos
 
 Most blockchains have:
@@ -13,13 +29,13 @@ Ethereum developers just play around in smart contracts, don't need to worry abo
 ## What do I mean when I saw Cosmos?
 
 - Not Cosmos Hub
-- Not $ATOM (No money for you)
+- Not $ATOM
 - Cosmos SDK: Tendermint Consensus + IBC Modules + other stuff
 
 ### Philosophy
 
 - Instead of shared execution layer, you want application specific chains.
-- Benefit 1: You have control. :vader.
+- Benefit 1: You have control
   - Precompiles - code that denotes complicated computations cheaper on chain. If you don't have a precompile, you need to use the evm. E.g. cryptography. Defined in clients Cacn technically use .com domain as ENS, but this is extremely expensive to do DNSSEC onchain since cryptography isn't on chain. Might cost $1000 some money to verify
   - Novel consensus/Protocol Design. Osmosis wants to prevent MEV from happening; they want to use threshold encryption to do so. Thus, Osmosis can embed this in their chain
 - Benefit 2: Blockspace Monopoly
