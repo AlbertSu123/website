@@ -7,7 +7,7 @@ module.exports = {
   subtitle: 'Just a kid looking to make it',
   copyright: '© All rights reserved.',
   disqusShortname: 'albertsu',
-  postsPerPage: 4,
+  postsPerPage: 6,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [

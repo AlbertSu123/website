@@ -39,8 +39,6 @@ socialImage: "/media/image-2.jpg"
 - Take series 66 exam for fun lol
 - Create match highlights(soccer, basketball) based on number of comments in live chat
 
-
-
 # Completion Time: 1 week
 - Write up an article on people's ama, for example this one: https://www.teamblind.com/post/Started-in-VC-right-out-of-undergrad--AMA-4pN5cL2r
 - Use student loan pricing data from places like SoFi to create school rankings

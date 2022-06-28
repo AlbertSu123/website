@@ -33,9 +33,24 @@ socialImage: "/media/image-2.jpg"
   - Office of Undergraduate Research and Scholarships(Research.berkeley.edu) Useful for research, scholarships related to research
 
 # Startup Resources
+
 - **List of "accelerators"**
--  UC Launch, Big Ideas, Citrix-Banatao, https://startup.berkeley.edu/, https://www.dormroomfund.com/apply
+- UC Launch, Big Ideas, Citrix-Banatao, https://startup.berkeley.edu/, https://www.dormroomfund.com/apply
 
 # CS Classes Resources:
+
 - **CS61A**
-- http://alvinwan.com/publications/abcSICP.pdf  
+- http://alvinwan.com/publications/abcSICP.pdf
+
+# Before Classes Start:
+
+- **Figure out who is the best GSI(Graduate Student Instruction)**
+  - There's a big gap between the best and work GSIs/UGSIs at Cal. Try to figure out which GSI is the best(usually a combination of semesters on course staff, if they are a head TA, if they have resources for the class that aren't official class materials <- this one is huge because it shows that they care). Attend all of their discussion, labs, and office hours and if you do, you pretty much have at least an A- in the class.
+
+# When moving to a new apartment
+
+- **Take a slow moving video before/right after moving in to prevent getting sued for damages**
+
+# Osmosis Office
+
+- Osmosis has an office in berkeley, iykyk

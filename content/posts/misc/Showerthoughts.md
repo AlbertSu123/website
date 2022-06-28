@@ -1,6 +1,6 @@
 ---
-title: Misc Notes
-date: "2025-11-21T23:46:37.121Z"
+title: Showerthoughts
+date: "2021-11-21T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "misc-notes"
@@ -9,14 +9,13 @@ tags:
   - "List"
   - "UC Berkeley"
 
-description: "Random Ideas"
+description: "Musings on Interpersonal Interactions"
 socialImage: "/media/image-2.jpg"
 ---
 
 # Useful stuff
 
 - Get people to contribute to an idea and they will be more likely to accept it. Studies show that it doesn't take that much involvement in the creative process to get people to take possession of a proposed plan.
-- Use youtube transcript to find specific words in the video to watch that part of the video
 - Easy way to get people to like you
   Them: Tell me about yourself?
   You: I did blah blah blah…, what about you?
@@ -37,7 +36,7 @@ socialImage: "/media/image-2.jpg"
 - When smoking meats in a barbecue, instead of using wood smoke, use a juul for extra flavor.
 - For group interviews, have the candidate play a level of overcooked to see how well they work as a team and respond to stress
 - Things that are complete are completed, things that are incomplete are incomplete
-- Denero's first lecture(Intro to Computer Science) was very impressive because he did some playing around with numbers while teaching us how to use + - * and /. He kept making small examples ie 4+3 is 7 to show what the operators where, something that we naturally know how to use. However, he later created another expression 1+2*3+4/5… which ended up evaluating to 2019. He set our expectations one way and blew them out of the water. Preparing for presentations with small details is very useful
+- Denero's first lecture(Intro to Computer Science) was very impressive because he did some playing around with numbers while teaching us how to use + - * and /. He kept making small examples ie 4+3 is 7 to show what the operators where, something that we naturally know how to use. However, he later created another expression 1+2*3+4/5… which ended up evaluating to 2019
 
 # Longer stuff
 
