@@ -3,7 +3,7 @@ title: Showerthoughts
 date: "2021-11-21T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "misc-notes"
+slug: "showerthoughts"
 category: "Misc"
 tags:
   - "List"

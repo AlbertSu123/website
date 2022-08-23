@@ -3,7 +3,7 @@ title: Cosmos
 date: "2021-12-30T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "borrow"
+slug: "cosmos"
 category: "crypto"
 tags:
   - "Notes"
