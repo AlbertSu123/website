@@ -1,0 +1,1 @@
+What happens when the price of collateral drops? After liquidations trigger, did they cause more liquidations afterward?    
