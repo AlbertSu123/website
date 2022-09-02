@@ -21,12 +21,7 @@ Most blockchains have:
 1. Shared execution layer
 2. Smart contracts
 
-Ethereum developers just play around in smart contracts, don't need to worry about consensus, etc.
-"The big brain giga-chads nerdsniped me into Cosmos"
-
-- Scott Sunarto
-
-## What do I mean when I saw Cosmos?
+## What do I mean when I say Cosmos?
 
 - Not Cosmos Hub
 - Not $ATOM
@@ -78,18 +73,16 @@ Quick notes
 
 ## How IBC works
 
-Properties of IBC:
-Data confidentiality + Legibility: Send as little data to validator as possible + validator needs to understand the data
-Reliability: Relayer + blockchain works independently, there is a chance of dropping packets. This is managed by a sequence number per packet.
-Flow Control: Depends on ledger, IBC does not have overriding rule
-Authentication: Whenever IBC is to be used, data must be first on the originating blockchain. IBC handler(validator?) verifies the data
-Statefulness: Three parts - clients, connection, channel
-Clients: info about state of both blockchains
+- Properties of IBC: Data confidentiality + Legibility: Send as little data to validator as possible + validator needs to understand the data
+- Reliability: Relayer + blockchain works independently, there is a chance of dropping packets. This is managed by a sequence number per packet.
+- Flow Control: Depends on ledger, IBC does not have overriding rule
+- Authentication: Whenever IBC is to be used, data must be first on the originating blockchain. - IBC handler(validator?) verifies the data
+- Statefulness: Three parts - clients, connection, channel
+- Clients: info about state of both blockchains
 connection: identifiers/data structures agreed by both blockchains
-channel - info about encoding info, state, sequence numbers
-Multiplexing: smart contracts can use single IBC connection. Generally one to one but IBC supports one to many and many to one
-
-Relayer - keeps watch of state chain from origin chain(ie Ethereum in example above)
+- Channel: info about encoding info, state, sequence numbers
+- Multiplexing: smart contracts can use single IBC connection. Generally one to one but IBC supports one to many and many to one
+- Relayer - keeps watch of state chain from origin chain(ie Ethereum in example above)
 
 ## Use Case
 
@@ -108,20 +101,6 @@ Solved via validators?
 Learning - Learn more about cosmos
 Document - Publish technical articles, explainer articles, based on learning
 Buidling - play with cosmos ibc, a bit tough scotty doesn't believe in us :(, Spinning up dapp chain, running a relayer
-
-## Have a bab cosmos chain running
-
-- Check out starport: Scaffold your modules with starport and then you can read the code from other chains as a guideline for more complex stuff. Most of what you need comes with the Cosmos SDK's base set of packages
-
-## Explainer on Cosmos IBC
-
-- Zeitgeist on Bridges, we can get in now
-- Systematization of knowledge on cosmos IBC: go through many docs, and give a TLDR: What is Cosmos IBC, Trust tradeoffs, meta-analysis,
-
-## Wut are we doing?
-
-- Article on Cosmos: Tendermint + Cosmos chains
-- Article on IBC
 
 # Questions
 
