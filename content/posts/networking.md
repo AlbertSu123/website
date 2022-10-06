@@ -56,3 +56,104 @@ Solutions: learning switches and stp
 Goals: short paths, resilient to failure, paths for all destinations in a potentially large network
 Properties: Must be scalable: get a new address when you join a new network, allows routing to group based cidr prefixes
 
+# Midterm review
+
+## Endhosts
+
+## Links
+- Properties that characterize a link: Bandwidth, propogration delay, bandwidth delay product
+- Types of delays: transmission time, propogration time, queueing delay
+
+## Routers
+- Routers connect links, what do routers look like internally?
+- Route processors vs linecards
+- Control vs data plane
+- Fast path vs slow path
+- Key challenege: build a dataplane with high performance
+
+### Routing
+- Valid routes: no deadends or loops
+- Link costs and least cost paths
+- Route convergence 
+- Achieve forwarding through default routes or static routes(how does a router know where a destination is?)
+
+### Routing Algorithms
+- Distance Vector, Link State, Spanning Tree Protocol
+
+### Distance Vector
+- I tell my neighbors about my least cost distance to a destination, they update their least cost distances and next hop choices accordingly
+- Where we advertise routes
+- Logic/rules for when to update a route
+- Periodic vs triggered updates
+- Understand what happens when routers fail, links fail, advertisements are dropped
+- Counting to inifinty problem
+- How TTL and advertisement rules can lead to long convergence times
+- Split horizon: Don't tell your next hop anything
+- Poison reverse: tell your neighbor the next hop is inifinity
+- Poisoning a route: tell all your neighbors inifinity
+- Distance Vector: Global computation(distributed across all ndoes) using local data(from just itself and its neighbors)
+
+### Link State
+- Every router
+    - Gets the state of all links and locations of all destinations
+    - Uses that global information to build a full graph
+    - Find paths from itself to every destination on a graph
+    - Use the second hop in those paths to populat its forwarding table
+- Link state: Local computation using global data(from all parts of the network)
+
+### Learning Switches and Spanning Tree Protocol
+- Idea: Learn routes from watching where data packets come from, if you don't have a route, just flood(flooding -> need loop-free topology -> use spanning tree protocol)
+- Know how we discover the root and next hop to root
+- Know how we disable links not on path to the root
+- Pros: Enables plug and play hosts. Cons: Disabling links is wasteful
+
+## Interdomain routing
+- Distance Vector, Link State, and Spanning Tree Protocol are for routers within a domain, what about routers outside the domain
+
+### Domains(Autonomous Systems)
+- Types of AS: transit vs stub, tier 1 transit providers(who are they, they don't have providers)
+- Understand business relationships between AS - customer-provider vs peer to peer
+- Customers don't pay providers, peers don't pay each other
+- An AS connects to other AS as a customer/provider/peer
+- An AS obtains a prefix used to represent all hosts within an AS
+- Goal: ASes pick routes based on policy while preserving autonomy and privacy
+- Typical policy: Make money/save money
+
+## Addressing: hierarchical
+- Addresses structured as network prefix and host suffix
+- Remember address allocation is hierarchical: ICANN-> RIR -> AT&T -> UCB
+- Interdomain roting works on prefixes, which can be aggregagted
+- Destinations match using longest prefix, not exact match
+
+### Policy based routing and GAO Rexford
+- Advertise entire path vector
+- Aggregate prefixes as you go
+- Don't have to advertise a route to all prefix
+- Not always least cost
+- Gao-Rexford: capture common practice for export/selection rules
+- Gao Rexford chooses customer > peer > provider
+
+## How does BGP work?
+- eBGP, iBGP, IGP
+- Route advertisements = <prefix, attributes>
+- attributes include ASPATH, Local pref, MED, IGP
+
+## Statistical Multiplexing
+- Sharing approaches
+    - Reservations: End hosts explicity reserve bandwidth for some time
+    - Best effort: Send data packets when you have them and hope for the best
+- Canonical designs for sharing appraoches
+    - reservations via circuit switching
+    - Best effort via packet switching(What the internet uses)
+
+### Circuit switching vs Packet switching
+- Pros of circuit switching:
+    - Better application performance(reserved bandwidth)
+    - More predictable and understandable(w/o failures)
+- Pros for packet switching
+    - Better efficiency
+    - Faster startup to first packet delivered
+    - Easier recovery from failure
+    - Simpler implementation
+
+#
