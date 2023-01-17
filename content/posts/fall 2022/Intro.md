@@ -122,7 +122,43 @@ Reliable/Unreliable data delivery <- Layer where we care about packets \
 Applications \
 Highest Layer of abstraction
 
+### Local vs Global Delivery
+Ethernet networks only speak to Ethernet networks
+Optical Transport networks only speaks to optical networks.
 
+# What is a Protocol?
+- An agreement between parties on how to communicate
+- Defines syntax and semantics
+- Exist at multiple layers  
+- Each layer of the stack has multiple protocols except the network layer, which only has IP
+  - Each layer depends on the layer below, supports the layer above, and is independent of the same layer protocols
+
+## Why Layering?
+- Innovation can proceed in parallel #OpenInnovation
+- Different communities can innovate, ie L7(app devs) vs L1(chip designers)
+- The end host must implement all layers
+- The network must implement L1-L3, L4+ is for reliability and reliable data transport
+- Applications think about data, nic/driver cares about packets, network stack translates between these two
+- Ethernet doesn't know how to talk to OTN, Ethernet goes to IP which sends it to OTN which sends it to other OTN which sends it to IP which sends it to Ethernet
+
+### Layer Encapsulation
+1. Take data, add app Header(ie HTTP)
+2. Add transport header(ie port number)
+3. Add Network header(ie host address, ip)
+4. Add L2 header(ie ethernet address)
+5. Now your packet should be on wire and have a header from all layers!
+
+## Architectural Wisdom
+- End to End arguments in system Design
+- The Design Philosphy of the DARPA internet protocols
+
+### End to End Principle
+- Guides the debate about what functionality the network does or doesn't implement
+- Should we implement reliability in the network?
+- Solution 1: Implement reliability at each step(network must implement reliability)
+  - Problem: Cannot be perfectly reliable. What happens if a component has a bug or fails between two steps.
+- Solution 2: End to end check and retry(does not assume network is reliable)
+- Sometimes you want reliability in the network to increase performance
 # Questions?
 1. Difference between packet switching and circuit switching?
 2. How do we do reliable packet delivery?
