@@ -21,7 +21,6 @@ socialImage: "/media/image-2.jpg"
   You: I did blah blah blah…, what about you?
   Them: Blah Blah Blah
   You: Wow, that's so hard!
-  Them: Blah Blah Blah <-- They like you know because you rubbed their ego
 - Why not faster? Why can't we build this startup/finish this homework/learn this skill faster?
 - If you really want to connect with someone, take them for a long, scenic walk. Not being face to face takes some of the pressure off, and the scenery puts you in the right mood to open up.
 - If you haven't used your voice in a while (sleeping, lonely, etc) and suddenly need to take a phone call, hum for a few seconds prior. Your vocal cords won't let you down.
