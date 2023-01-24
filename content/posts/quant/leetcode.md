@@ -57,3 +57,8 @@ This is just binary search but not really, since we are only going one element a
 Other common two pointer problems:
 - Merge two sorted lists: [1, 3, 4, 6] and [2, 4, 7, 7] -> [1, 2, 3, 4, 6, 7, 7].
 - Remove duplicates from an array: [1, 1, 1, 4, 4, 5, 5, 5] -> [1, 4, 5].
+
+## [Three Sum](https://leetcode.com/problems/3sum/submissions/884601048/)
+Use the two pointer approach after sorting input array and add results to a set
+There is an edge case if the entire array is all zeroes, make sure to catch that edge case.
+TLDR: Two pointer op
