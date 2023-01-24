@@ -187,8 +187,95 @@ C = \{pick coin p\} H<sub>1</sub>, H<sub>2</sub> conditionally independent given
 TODO:
 Set calendar for homework self grades and resubmission time
 Set midterm time on calendar
-Choose discussion time
 Countable vs uncountable
-Go to discussion
 
+# Random Variables
+Passcode: Teapot
 
+*Def:* A random variable X is a function X: Ω -> R. It implies it is valid to write things like P(X <= 3). P(X <=3) is shorthand for P({ω: X(ω) <= 3})
+Random conditions have a measurability condition
+
+Often times we want to compute more complex probabilities, such as P(α < X < β).
+{ω: X(ω) < β} = U<sub>n >=1</sub>{ω: X(ω) < β -1/n} ∈ F
+{ω: X(ω) > α} = {ω: X(ω) <= α}<sup>C</sup> ∈ F
+P(X ∈ B) for pretty much any B(subset of R) that you want
+Here, the technical name for B is *Borel sets*
+
+Another consequence of the definition of random variables: 
+If X,Y are random variables on (Ω, F, P):
+- X+Y is a random variable
+- X*Y is a random variable
+- |X|<sup>p</sup> is a random variable
+
+## Probability Distributions
+For any random variable X on probability space (Ω, F, P), we can define its distribution(aka its "law") L<sub>x</sub> via L<sub>x</sub>(B) := P(X ∈ B), B ∈ R
+For example, L<sub>x</sub>({x}) = P(X=x)
+
+The histogram of values that a random variable would take.
+
+Similar to a probability measure.
+
+In practice, we often describe our model for experimental outcomes in terms of distributions. Given this, I can always construct a probability space and random variable X that has this distribution.
+
+Ex: Given distribution L, we can consider probability space (R, B, L) and random variable X(ω)=x, ω ∈ Ω = R
+Distribution of X
+
+Important Class of Random Variables;
+*Discrete Random Variables*: A random variable that takes countably many values
+Ex: X = flip of a p-biased coin. This is a bernoulli distribution with probability p
+
+X = roll a dice. This is a uniform distribution over {1,2,3,4,5,6}
+X = number of coin flips until I flip heads. Geometric Distribution
+X = number of heads in n flips. Binomial Distribution (n, p)
+
+In case of a discrete random variable X, the distribution of X can be summarized by its probability mass function.
+P<sub>x</sub>(x) := P({X=x}) = P{ω: X(ω) = x}
+
+By axioms, p<sub>x</sub>(x) >= 0 and Σp<sub>x</sub>(x) = 1
+
+### Joint Distributions
+For a pair of discrete random variables X,Y defined on the common probability space (Ω, F, P), their joint distribution is:
+summarized by the join probability mass function defined via 
+P<sub>xy</sub> = P(X=x, Y=y) = P({ω: X(ω) = x && Y(ω) = y}) = P({ω: X(ω)} ∩ {ω: Y(ω) = y})
+We can obtain the "marginal" distributions by P<sub>x</sub>(x) = Σ P<sub>xy</sub>(x,y) using the law of total probability Σ P(x) = 1
+
+## Independent Random Variables
+Def: Discrete Random Variables X,Y are independent if their probability mass function factors into their marginals
+P<sub>xy</sub>(x,y) = P<sub>x</sub>(x)P<sub>y</sub>(y)
+
+This is equivalent to saying {ω: X(ω) = x}) and {ω: Y(ω) = y}) are independent events for all x,y
+
+Examples of Joint Distributions:
+X = {0 if patient tests negative with probability 0.9, 1 if patient tests positive with probability 0.1}
+Y = {0 if patient is negative, 1 if patient is positive}
+
+We know the false positive rate of the test is 5%, the false negative rate of test is 1%
+
+Question: What is P<sub>XY</sub>?
+I test my patient. The test is either negative(.9) or positive(.1).
+
+## Expectation - Used for discrete random variables
+Takes in a random variable, spits out a distribution
+For a discrete random variable X on (Ω, F, P), we define its expectation E(X) = ΣxP{X=x} = Σxp<sub>x</sub>(x)
+
+Ex: If X Ω = {0,1}<sup>n</sup>, P({ω}) = p<sup>{number of heads}</sup> (1-p)<sup>{number of tails}</sup>
+ie a sequence of independent p biased coin flips
+
+X(ω) = {ω = 9}. <= Number of heads
+E[X] = Σ{i : ω<sub>i</sub>= 1}, p<sup>{i : ω<sub>i</sub>= 1}</sup> (1-p)<sup>{i : ω<sub>i</sub>= 1}</sup>
+
+= Σ<sub>k=0</sub><sup>n</sup> (n k) p<sup>k</sup> (1-p)<sup>n-k</sup> = np
+
+The most important property of expectation is that it is linear.
+Expectation is an operator, it takes a function and spits out a number, just like an integral.
+Just like how integrals are linear, expectation is also linear.
+
+The most important and only property of expectation `E[X+Y] = E[X] + E[Y]`
+
+### Linearity of Expectation
+If X,Y random variables defined on a common probability space. `E[aX + bY] = aE[X] + bE[Y]` <= There is no need for expectation to be independent or discrete.
+
+LemmaL E[g(z)] = Σ g(z) p<sub>z</sub>(z)
+
+By the law of the unconscious statistician
+E[aX + bY] = Σ(ax + by)P<sub>xy</sub>(xy) = aΣxP<sub>xy</sub>(x,y) + bΣxP<sub>xy</sub>(x,y)
