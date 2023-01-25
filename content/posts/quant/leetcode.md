@@ -62,3 +62,44 @@ Other common two pointer problems:
 Use the two pointer approach after sorting input array and add results to a set
 There is an edge case if the entire array is all zeroes, make sure to catch that edge case.
 TLDR: Two pointer op
+
+## [Container with the most water](https://leetcode.com/problems/container-with-most-water/submissions/884724541/)
+Use the two pointer approach, one pointer at each of the array
+If the Area is bigger than maxArea, set maxArea
+Move the shorter pointer towards the middle until you hit a taller pointer.
+
+I think I've cracked the two pointer style problems now!
+
+# Trees
+
+## [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+Need to figure out how pointers work her lol
+Do multi line assignments not work in c++?
+
+## [Max Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+For easy tree problems that only require recursion, anyone at berkeley who has taken 61a will demolish these since we literally had to cram this stuff within 5 weeks into learning how to program.
+
+## [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+Just think about base case, recursive case, and the problem is pretty easy
+The max diameter of a binary tree how long the longest line you could draw on a binary tree without picking up your pencil or retracing your steps.
+To calculate this, get the max of {longest left branch + longest right branch, max diameter of the left subtree, max diameter of the right subtree} 
+
+Also, C++ max functions take in max 2 function parameters, so just pass a list in.
+
+## [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+Problem: See if any of left and right subtree heights differ by more than one.
+Solution: Create a helper function that calculates subtree height.
+if the abs(left subtree height - right subtree height) > 1 or if the left or right subtrees are imbalanced, return false, else return true.
+
+Helper functions are pretty useful in recursive functions since it makes the recursive function's code shorter, making it easier to reason about.
+
+## [Same Tree](https://leetcode.com/problems/same-tree/)
+Problem: Check if two binary trees have the same values
+Solution:
+Check the current roots, if they are the same, recursively check the left and right subtrees
+
+## [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+Problem: Return true if there is a subtree that matches a subtree of the current tree
+Solution: Do nullChecks, if the trees are the same return true, else recurse on left and right subtrees
+
+Make sure to read the problem lol, I solved the wrong problem at first
