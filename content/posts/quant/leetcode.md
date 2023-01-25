@@ -103,3 +103,10 @@ Problem: Return true if there is a subtree that matches a subtree of the current
 Solution: Do nullChecks, if the trees are the same return true, else recurse on left and right subtrees
 
 Make sure to read the problem lol, I solved the wrong problem at first
+
+## [Lowest Common Ancestor of Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+Thought this was the lowest common ancestor of binary tree at first, started to learn dfs lol
+
+## [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
+Problem: Return an array of all the nodes in each level of a binary tree
+Solution: Create a queue, get all the elements in the queue, pop that many elements and add that to a row array, then insert elements back into the queue.
