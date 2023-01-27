@@ -279,3 +279,86 @@ LemmaL E[g(z)] = Σ g(z) p<sub>z</sub>(z)
 
 By the law of the unconscious statistician
 E[aX + bY] = Σ(ax + by)P<sub>xy</sub>(xy) = aΣxP<sub>xy</sub>(x,y) + bΣxP<sub>xy</sub>(x,y)
+
+# Sum of Independent Binomials, Variance, Covariance, Correlation Coefficient, Entropy
+
+## General Strategy for Expectation
+1. We introduce indicator random variables and express random variable of interest in terms of the indicators, then use linearity of expectation
+2. In general, the indicator for event A is denoted by 1<sub>A</sub>(w) = {0 if ω is not A, 1 if ω is A}
+   a. 1<sub>A</sub> = Bernuolli(P(A)), E[1<sub>a</sub>] = P(A)
+
+Ex: n people put their hats in a bucket, and each draw 1 hat. Let X = number of people who get their own hat back.
+X = Σ<sub>i=1</sub><sup>n</sup>1<sub>A</sub>
+A<sub>i</sub> = {gets own hat back}
+E[x] = Σ<sub>i=1</sub> E[1<sub>M/sub>]= n * 1/n = 1
+
+Ex: Coupon collector problem
+How many on boxes on average do I need to buy before I collect all N coupons
+X<sub>i</sub> = number of boxes to buy to get ith coupon, after getting (i-1)<sup>th
+R[].
+
+## Tail sum formula: Another way to compute expectation without using linearity of expectation.
+For non-negative integer values random value X<sub>i</sub>
+E[X] = Σ<sub>k=1</sub><sup>inf</sup>P{x=k}
+
+Proof: write P({x>= k}) = Σ<sub>x>=k</sub> P{x >= k} = Σ<sub>x>=k</sub> P(X=x)
+
+X<sub>1</sub> = Geom(p), X<sub>2</sub> = Geom(p)
+M = min{X<sub>1</sub>, X<sub>2</sub>}
+P{M>= k} = P{x<sub>1</sub>}, P{x<sub>2</sub>}
+
+IE[M] = Σ P{x<sub>1</sub> >= k} P{x<sub>2</sub>>=k} 
+= 1 / (1- (1-p)*(1-q)))
+
+## Variance
+Quantitative Notion of variability of X around E[X]
+Var(X) = E[(X - E[X])<sup>2</sup>] = E[X<sup>2</sup> - 2XE[X] + (E[X])<sup>2</sup>]= E[X<sup>2</sup>] - (E[X])<sup>2</sup>
+
+If expectation is the price of a stock, variance is the volatility.
+Variance is not the only way to measure the variability of a random variable. Another way to measure the variance of a random variable is entropy.
+Entropy = Σ P<sub>x</sub>(X) log(1/P<sub>x</sub>(X)) = E[log(1/P<sub>x</sub>(X))]
+
+Unlike expectation, variance is not linear with respect to its arguments. Var(X+X) = ?
+Var(X+Y) != Var(X) + Var(Y)
+Var(X+Y) 
+
+By definition of variance
+= E[X+Y - E[X] - E[Y]]<sup>2</sup>
+
+Open up the square using foil
+= Var(X) + Var(Y) + 2 E[(X-E[X])(Y-E[Y])]
+
+## [X - E[X])(Y-E[Y]) = Covariance
+Positive covariance means X and Y move in the same direction
+If X and Y are independent, covariance is 0
+
+If X,Y are uncorrelated(covariance of X,Y = 0), then Var(X+Y) = Var(X) + Var(Y)
+
+Correlation coefficient: Covariance(X, Y) / sqrt(Var(X)*Var(Y)). It is always between -1 and + 1
+
+Covariance(X,Y) <= sqrt(Var(X) * Var(Y))
+Using cauchy schwartz inequality, x<sup>T</sup>y / (||X|| ||Y||) is between [-1, 1]
+
+E[XY] <= E[X<sup>2</sup>]<sup>1/2</sup> E[Y<sup>2</sup>]<sup>1/2</sup>
+E[XY] = Σ P<sub>xy</sub>(x,y)<sup>1/2</sup> x * P<sub>xy</sub>(x,y)<sup>1/2</sup> y <= (Σ<sub>xy</sub>P<sub>xy</sub>(x,y)x<sup>2</sup>)<sup>1/2</sup> (Σ<sub>xy</sub>P<sub>xy</sub>(x,y)y<sup>2</sup>)<sup>1/2</sup>
+
+Let X ~ Binomial(n, p)
+X = Σ X<sub>i</sub> X<sub>i</sub>Bernuolli(p)
+Var(X) = Σ Var(X<sub>i</sub>) = n Var(X<sub>1</sub>)
+
+## Poisson random variables
+Poisson means fish in french. Think number of arrivals when you see poisson
+If I dip a net into the water and pull it out, a poisson distribution is a good way to checking how much fish I pull out.
+
+X ~ Poisson(λ) λ = rate
+P<sub>λ</sub>)(k) = λ<sup>k</sup>/k! e<sup>-λ</sup>, k = 0,1,2,...
+
+Imagine trying to take a bus in berkeley. They are supposed to be at each station every 30 minutes. However, there are times when no buses come for 45 minutes then two buses come in the 46th and 47th minute. You can model the arrival of the buses using a Poisson distribution
+
+Where does Poisson come from? 
+Each interval something will arrive with probability p<sub>n</sub> = λ/n. The probability that something arrives in an interval is X<sub>n</sub> ~ Binomial(n, p<sub>n</sub>)
+
+P(X<sub>n</sub>=k) = Binomial PMF = (n k) * (λ/n) * (1-λ/n)<sup>n-k</sup>
+= n(n-1)...(n-k+1) *(1/n-λ)<sup>k</sup>* λ<sup>k</sup>/k! (1-λ/n)<sup>k</sup>
+as n goes to infinity, this distribution converges to a poisson distribution
+λ<sup>k</sup>/k! * e<sup>-k</sup>

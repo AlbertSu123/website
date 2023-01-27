@@ -110,3 +110,32 @@ Thought this was the lowest common ancestor of binary tree at first, started to 
 ## [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
 Problem: Return an array of all the nodes in each level of a binary tree
 Solution: Create a queue, get all the elements in the queue, pop that many elements and add that to a row array, then insert elements back into the queue.
+
+## [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+Problem: Return all the nodes on a binary tree that you would see if viewing it from the right
+Solution: Do level order traversal, but only save one element from each row, the last element.
+Try to figure out which algorithm will work, instead of hoping some recursive bullshit will work.
+
+## [Valid Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+Problem: Check if a tree is a valid binary search tree
+Solution: Create an array using in order traversal, then check if elements are ascending
+Try to figure out how to do in order traversal first.
+
+## [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+Problem: Return the Kth smallest element in a BST
+Solution: Use in order traversal and return the kth element
+Study up on in order traversal lol
+```
+stack<TreeNode*> s;
+TreeNode* p = root;
+while (p != NULL || !s.empty()){
+    while (p != NULL){
+        s.push(p);
+        p = p->left;
+    }
+    p = s.top();
+    s.pop();
+    // Do something with p->val here
+    p = p->right;
+}
+```
