@@ -31,12 +31,29 @@ Independent Security Auditors
 Nexus Mutual
 ## Bearish on Team
 Canto
+Saddle Finance
 
 ## Bearish on Idea
-
+MEV
+Waves blockchain
 ## Other
 
 # Things you might not have know
 
 ### TVL is fake
-People fake TVL all the time. Whether through recursive lending/borrowing, liquidity mining rewards, or a waves play, what you see if often not what you get. However, some projects and firms take this one step further where they make deals to pledge some portion of project tokens in exchange for a certain TVL amount. Some examples of this include platypus finance, 
+People fake TVL all the time. Whether through recursive lending/borrowing, liquidity mining rewards, or a waves play, what you see if often not what you get. However, some projects and firms take this one step further where they make deals to pledge some portion of project tokens in exchange for a certain TVL amount. Some examples of this include platypus finance, where alameda deposited hundreds of millions in stablecoins and dumped the tokens that they received from the team.
+
+### Random list of protocols that probably have an exploit or two in them
+- [Compound forks](https://defillama.com/forks/Compound) on weird EVM alt L1s. Compound is safe protocol. Compound forks are not safe protocols. There are a wide variety of possible exploits on a compound fork:
+  - if you use bad oracles, you will get flash loaned and drained
+  - even if you have flash loan checks, the prices of the least liquid token can probably be manipulated, as there usually isn't too much liquidity on an alt L1.
+  - If you have a single ERC-777 or ERC-677 token, someone will hit you with a reentrancy attack
+  - If you use an old version of the compound v2 codebase, you will get hit with the `.transfer()` hack, the same one that stole 80 million from the Fei pool in Rari
+
+### Tiers of DeFi Teams
+There's basically three tiers of DeFi Teams
+Tier 1: 30+ people, basically the MakerDAOs and the Uniswaps of the world. They usually have strong PMF and are heavily recognized, they ship open sourced code in addition to working on their project, and generally try to advance the industry in addition to their own projects.
+
+Tier 2: Top End: Frax Finance, Bottom End: Saddle Finance. This is a barebones team, where there is at least one person covering each of the major facets required to run a DeFi project. They usually have one of each of the following: Solidity Engineer, Frontend Engineer, Designer(usually contracted), business lead(basically takes all the calls), community lead(sometimes combined with business lead, basically someone to sit in discord all day), and founder. Fun fact, legal action will destroy them, as they have no bandwidth or money to deal with that.
+
+Tier 3: This is either a solo dev or an anon "team" of devs. It usually takes them a while to get going since they are basically a one man show, telegram takes a while for a response, things don't ship very quickly, tweets usually happen at most once a day, etc. I know this because I did this in the past.

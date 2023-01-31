@@ -139,3 +139,14 @@ while (p != NULL || !s.empty()){
     p = p->right;
 }
 ```
+
+
+# Bitwise Operator
+
+## [Single Number](https://leetcode.com/problems/single-number/)
+Problem: Given an array of numbers, find the single number that is not repeated twice
+Solution: Xor everything together, the final number is the answer.
+
+## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+Problem: Return the number of 1 bits in an integer
+Solution: Iterate through the number and & it with 1

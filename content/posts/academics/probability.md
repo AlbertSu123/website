@@ -190,7 +190,7 @@ Set midterm time on calendar
 Countable vs uncountable
 
 # Random Variables
-Passcode: Teapot
+Password: Teapot
 
 *Def:* A random variable X is a function X: Ω -> R. It implies it is valid to write things like P(X <= 3). P(X <=3) is shorthand for P({ω: X(ω) <= 3})
 Random conditions have a measurability condition
@@ -362,3 +362,148 @@ P(X<sub>n</sub>=k) = Binomial PMF = (n k) * (λ/n) * (1-λ/n)<sup>n-k</sup>
 = n(n-1)...(n-k+1) *(1/n-λ)<sup>k</sup>* λ<sup>k</sup>/k! (1-λ/n)<sup>k</sup>
 as n goes to infinity, this distribution converges to a poisson distribution
 λ<sup>k</sup>/k! * e<sup>-k</sup>
+
+# Continuous Distributions, Continuous Random Variables
+Password: Mirror
+
+## Conditional Distributions
+`P(A|C) := P(A ∩ C) / P(C)`
+
+When X,Y are discrete: their joint pmf is P<sub>xy</sub>
+
+P<sub>x|y</sub>(x|y) := P<sub>x|y</sub>(x,y) / P<sub>y</sub>(y) = P({X=x} ∩ {Y=y}) / P({Y=y})
+
+Since P<sub>x|y</sub> is a pmf for each y with `P<sub>y</sub>(y) > 0`, we can take expectation of X with respect to it.
+
+This is defined as conditional expectation
+E[X|Y=y] := Σ<sub>x⊆X</sub> xP<sub>x|y</sub>
+Once we have the value of Y, what is the value of x?
+We usually just write E[X|Y] to denote Σ<sub>x⊆X</sub> xP<sub>x|y</sub> evaluated at random variable Y. Thus, the conditional expectation is itself a random variable since it is a function of the random variable Y.
+
+## Tower Property
+Most important property of Conditional expectation: 
+- For all functions f, we can say `E[f(Y)X] = E[f(Y)*E[X|Y]]`
+  - E[f(Y)X] = Σ<sub>y</sub> p<sub>y</sub>(y)f(y) * Σ<sub>x</sub>P<sub>x|y</sub>(x|y)
+  - E[f(Y)X] = Σ<sub>x,y</sub>P<sub>xy</sub>(x,y)*f(y)x
+
+Example: Iterated Expectation
+E[X] = E[E[X|Y]]
+We get this using the tower property by setting f(Y) = 1
+
+Example: Let N>= 0 be an integer valued random variable. Let's flip a fair coin N times, and let X = the number of heads.
+There are two sources of randomness, the number of flips and whether we get heads or tails.
+E[X] = E[E[X|N]]
+We can fix the number of coin tosses, and since half of coin tosses are heads
+E[X|N] = N / 2
+Substitute
+E[N/2]
+Use linearity of expectation
+1/2 E[N]
+
+Var(X) = E[Var(X|N)] + Var(E[X|N])
+Using the same substitution as above of E[X|N] = 1/2
+Use binomial theorem for E[Var(X|N)] = E[N/4]. Variance of a binomial = ?
+Var(X) = E[N/4] + Var(N/2)
+Var(X) = 1/4 * E[N} + 1/2 * Var(N)
+
+Recall Var(X) = E[X-E[X]<sup>2</sup>]
+Definition: Conditional Variance of X given {Y=y}
+Var(X|Y=y) = Σp<sub>x|y</sub>(x|y)(X-E[X|Y=y])<sup>2</sup>
+
+Just like conditional expectation, we write Var(X|Y) to denote the random variable evaluated at Y.
+
+Theorem: Law of total variance
+
+Var(X) = E[Var(X|Y)] + Var(E[X|Y])
+
+Proof:
+
+Var(X) = E[X<sup>2</sup>] - (E[X])<sup>2</sup>
+
+= E[E[X<sup>2</sup>|Y]] - (E[E[X|Y]])<sup>2</sup>
+
+= E[Var(X|Y)] + E[E[X|Y]<sup>2</sup>] - (E[E[X|Y]])<sup>2</sup>
+
+= E[Var(X|Y)] + Var(E[X|Y])
+
+Now let's start with Var(X|Y=y)
+
+= E[X<sup>2</sup>|Y=y] - (E[X|Y=y])<sup>2</sup>
+
+= E[Var(X|Y) + E(X|Y)<sup>2</sup>] - (E[E[X|Y]])<sup>2</sup>
+
+## Continuous Random Variables and Continuous Distributions
+Note: Random Variables need not be discrete or continuous or combinations thereof
+For a random variable X, we can always define its cumulative distribution function abbreviated CDF via 
+
+F<sub>x</sub>(X) := P{X<=x}
+
+1. F<sub>x</sub> is nondecreasing 
+2. F<sub>x</sub>(x) -> {0 if x -> -inf, 1 if x -> inf}
+3. F<sub>x</sub> is continuous from the right
+
+Definition: A random variable X has continuous distribution if there exists a function f<sub>x</sub> such that 
+
+F<sub>x</sub>(x) = ∫<sub>-inf</sub><sup>x</sub>f<sub>x</sub>(u)du
+
+f<sub>x</sub> is called the density of X aka a pdf(probability density function)
+
+For f<sub>x</sub> to be a density, it just needs to be non-negative and the integral of the density to be equal to 1, since total probability = 1
+f<sub>x</sub> >= 0
+∫f<sub>x</sub>dx = 1
+
+### Continous Random Variables
+Good for modeling analog signals from the real world.
+- time we wait until a bus arrives(Exponential Distribution)
+- Voltage across resistor(Gaussian Distribution)
+- Phase of a received wireless signal(Uniform Distribution)
+  
+Continuous distributions usually described by their density.
+X ~ Uniform(a,b) = {1/(b-a) a <= x <=b, 0 otherwise}
+X ~ Exp(λ) = {λe<sup>-λx</sup> if x>=0, 0 otherwise}
+X ~ N(µ,σ<sup>2</sup>) = 1/sqrt(2pi*σ)exp(-(x-µ)<sup>2</sup> / 2σ<sup>2</sup>)
+
+### Jointly Continuous Random Variables
+We say X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub> are jointly continuous if 
+F<sub>X<sub>1</sub>X<sub>2</sub>...X<sub>n</sub></sub></sub>(x<sub>1</sub>x<sub>2</sub>...x<sub>n</sub>) = P{X<sub>1</sub><=x<sub>1</sub>, X<sub>2</sub><=x<sub>2</sub>, ... X<sub>n</sub><=x<sub>n</sub>}
+
+= ∫∫ F<sub>X<sub>1</sub>X<sub>2</sub>...X<sub>n</sub></sub></sub>(x<sub>1</sub>x<sub>2</sub>...x<sub>n</sub>)du<sub>1</sub>du<sub>2</sub>...du<sub>n</sub>
+
+Example:
+Let a dart land uniformly at random on a 2d dartboard of radius r.
+The joint density will be flat over the dartboard
+
+{1/pi*r<sup>2</sup>, x<sup>2</sup> + y<sup>2</sup>}
+Independence: Random Variables X,Y are independent if F<sub>xy</sub>(x,y) = F<sub>x</sub>(x) * F<sub>y</sub>(x)
+If X,Y are continuous and independent, their joint density is the product of the marginals
+
+### Expectation of continuous random variables
+Same as discrete case, replace sums with integrals
+E[X] = ∫x f<sub>x</sub>(x)dx
+
+More generally: 
+E[g(X<sub>1</sub>...X<sub>n</sub>)] = ∫...∫g(x<sub>1</sub>...x<sub>n</sub>) f<sub>x<sub>1</sub> ... x<sub>n</sub></sub>(x<sub>1</sub> ... x<sub>n</sub>)dx<sub>1</sub> ... dx<sub>n</sub>
+
+Example:
+Var(X) = ∫(X-E[X])<sup>2</sup> f<sub>x</sub>(x)dx
+
+Example: X ~ Unif(a,b)
+E[X] = ∫ uniform density function
+
+= ∫ x * 1 / (b-a) dx
+
+= 1/2 * (b<sup>2</sup> - a<sup>2</sup>) / (b-a)
+
+= 1/2 * (b+a)
+
+Example: Var(X) = E[X<sup>2</sup>] - (E[X])<sup>2</sup>
+= 1/2 (b-a)<sup>2</sup>
+
+Let r = sqrt(x<sup>2</sup> + y<sup>2</sup>)
+Compute the probability that the dart is in the middle half of the dartboard.
+
+P{R<= r/2} = P{x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4}
+
+= E[{x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4}]
+
+= 1/(pi * r<sup>2</sup>) ∫ {x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4} dx dy
