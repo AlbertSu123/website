@@ -519,3 +519,98 @@ P{R<= r/2} = P{x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4}
 = E[{x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4}]
 
 = 1/(pi * r<sup>2</sup>) ∫ {x<sup>2</sup> + y<sup>2</sup> <= r<sup>2</sup> / 4} dx dy
+
+# Gaussian Distribution, Derived Distributions, Continuous Bayes	
+
+Discrete: Expectations come from PMF and sums
+Continuous: Expectations come from PDF and integrals
+
+### Examples of continuous distributions
+Uniform(a,b)
+Exp(N)
+N(µ, σ<sup>2</sup>)
+
+## Exponential Distribution
+Suppose we want to model a memoryless process. For example, as a switch sending packets, it doesn't matter how long you wait for a packet to show up, the expected wait time for the next packet doesn't change.
+
+**Mathematically**: Let X be a non-negative random variable with the memoryless property. 
+Memoryless = P{X>t+s|X>s} = P{X>t} for all t,s > 0
+If I've waited for s seconds, the probability P{X>t} is still unchanged
+
+P({X>t+s} ∩ {x > s}) = P({x > t}) P({x > s})
+Get rid of {x > s} since if x > t + s, x must be greater than s
+
+F(t + s) = F(t) F(s) 
+The only unique solution to the functional equality that is a CDF(must be non-negative, monotone increasing) of the form F<sub>x</sub> = e<sup>-λx</sup>
+
+If x has memoryless property, F(X) = 1 - e<sup>-λt</sup> for some λ > 0
+
+## Gaussian Random Variables
+
+The sum of independent effects. Height of NBA players, satisfaction of jobs, sum of voltage across resistor.
+
+We call N(0,1), the standard normal distribution. 
+
+CDF:  1/2pi ∫exp(-µ/2)<sup>2</sup>du
+
+P(X<= x) = P((x-µ)/σ <= (x-µ)/σ) = Φ((x-µ)/σ)
+Gaussians have many nice properties
+
+If X is gaussian, then so is aX + b.
+If X,Y are independent gaussians, then X+Y is gaussian
+
+Example: Let V ~ N(1, 5<sup>2</sup>) be input voltage to chip, averaged over 1 second.
+Our chip fails if voltage dips below 0.5 volts or exceeds 2.5 volts for any one second period
+
+Probabilty(chip fails in 60 second duration) <= 60 * Probability(chip fails in 1 second)
+60 * Probability(chip fails in 1 second) = 
+= 60 * Probability(V < 0.5) + Probability(V > 2.5)
+= Φ((0.5 - 1)/σ)  + (1 - Φ((2.5-1)/σ))
+
+Example: cellphone sends a bit B ∈ {-1, 1} to tower. Tower receives Y = B + N, N ~ N(0,1). Tower makes decisions B(Y) = sign(Y)
+P(err | B = 1) 
+
+Given that I receive {Y=y} what is the probability that B = 1
+P({B = 1}) = P(Y ∈ [y, y + 𝛿] | B = 1) P(1)
+
+= P<sub>B|Y</sub>(1 | y) = P<sub>B</sub>(1) * f<sub>Y|B</sub>(y|1) / f<sub>y</sub>(y)
+This is bayes rule for one 
+
+= (1/sqrt(2pi) * exp(-(y-1)<sup>2</sup>/2)) / (1/2 * 1/sqrt(2pi) * exp(-(y+1)<sup>2</sup>)/2) + ...
+= 1 / (1 + e<sup>-2y</sup>)
+
+This is b
+Example:
+Last example motivates the definition of conditional density
+If X,Y are jointly continuous, we define conditional density of X given Y:
+
+f<sub>x|y</sub>(x|y) = f<sub>xy</sub>(x,y) / f<sub>y</sub>(y)
+interpretation: is the density of X given I know {Y=y}
+
+Bayes rule
+f<sub>x|y</sub>(x|y) = f<sub>x</sub>(x) / f<sub>y</sub>(y) * f<sub>y|x</sub>(y|x)
+
+Example:
+For X,Y that are jointly continuous, we have
+E[X|Y=y] = ∫ x f<sub>x|y</sub>(x|y)dx
+CE still satisfies tower property: E[g(y|x)] = E[g(y)E[X|Y]]
+
+## Derived Distributions
+Distribution of X give by CDF F<sub>x</sub>. Suppose we define `Y = g(x)` for some function g
+
+What is the distribution of Y?
+1. Do you really need this distribution?
+2. If you really need the distribution, it is best to work with CDFs
+
+
+Example: 
+X continuous random variable, Y = aX + b
+F<sub>y</sub>(y) = P{aX <= y-b}
+= P{x <= (y-b) / a if a > 0, x >= (y-b)/a if a < 0}
+= {F<sub>x</sub>((y-b)/a) if a > 0, 1 - F<sub>x</sub>((y-b)/a) if a < 0}
+
+f<sub>y</sub>(y) = {1/a * F<sub>x</sub>((y-b)/a) if a > 0, -1/a * F<sub>x</sub>((y-b)/a) if a > 0}
+= 1/|a| * f<sub>x</sub>((y-b)/a)
+
+Y = AX + b
+f<sub>y</sub>(y) = 1/|det(A)|f<sub>x</sub>(A<sup>-1</sup>(y-b))
