@@ -155,5 +155,3 @@ Properties: Must be scalable: get a new address when you join a new network, all
     - Faster startup to first packet delivered
     - Easier recovery from failure
     - Simpler implementation
-
-#

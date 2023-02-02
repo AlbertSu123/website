@@ -1,5 +1,17 @@
-Probability in Electrical Engineering and Computer Science
-Real applications of probability
+---
+title: Probability in Electrical Engineering and Computer Science
+date: "2023-01-10T23:46:37.121Z"
+template: "post"
+draft: false
+slug: "probability"
+category: "Misc"
+tags:
+  - "List"
+  - "UC Berkeley"
+
+description: "Real applications of probability"
+socialImage: "/media/image-2.jpg"
+---
 
 Introduction to Probability, 2nd Edition
 Follows the course, can borrow from engineering library
