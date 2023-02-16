@@ -3,7 +3,7 @@ title: Crypto
 date: "2023-01-20T00:00:00"
 template: "post"
 draft: false
-slug: "misc-problems"
+slug: "crypto"
 category: "Reflections"
 tags:
   - "Crypto"

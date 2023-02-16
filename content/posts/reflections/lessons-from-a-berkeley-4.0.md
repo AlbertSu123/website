@@ -3,7 +3,7 @@ title: Lessons from a UC Berkeley 4.0
 date: "2023-01-20T00:00:00"
 template: "post"
 draft: false
-slug: "misc-problems"
+slug: "lessons-from-a-uc-berkeley-4.0"
 category: "Reflections"
 tags:
   - "Academics"
