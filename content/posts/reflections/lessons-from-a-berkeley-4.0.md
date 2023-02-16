@@ -12,7 +12,7 @@ tags:
 description: "Actually Useful Study Tips"
 socialImage: "/media/image-2.jpg"
 ---
-
+Note: I am not the UC Berkeley 4.0 :{
 ### Midterm 1
 
 Always over study for midterm 1, you don't know how well your classmates will do on the tests nor the structure and format for the tests, thus, you need to be extra prepared.
@@ -39,11 +39,11 @@ No, I just remember stuff.
 
 ### Homeworks
 
-"I just sit down and do it starting at 8 in the morning the day it is due. If I'm not feeling it, I just won't do the homework" Note: This man didn't do 3 homeworks in cs170 even though you only have two homework drops
+"I just sit down and do it starting at 8 in the morning the day it is due. If I'm not feeling it, I just won't do the homework" Note: This man didn't do 3 homeworks in algorithms even though you only have two homework drops
 
 ### Piazza
 
-"I fucking hate piazza cause they are fucking dumbasses on there. 170 was the first time since the problems are too much to do by yourself. When people leave how they've done problems, then that is useful to look. " It's better to talk to people in real life that you know to bounce ideas off of.
+"I fucking hate piazza(online forum to ask questions) cause they are fucking dumbasses on there. 170 was the first time since the problems are too much to do by yourself. When people leave how they've done problems, then that is useful to look. " It's better to talk to people in real life that you know to bounce ideas off of.
 
 ### Have you ever gotten worse than an A in a class?
 
