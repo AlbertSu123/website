@@ -41,3 +41,22 @@ Instead The layout effectively communicates the hierarchical nature of the data,
 Ask for alternatives instead of offering solutions
 Not: You should change X
 Instead: have you considered alternatives to X
+
+## Inquires
+Understand users and their tasks. Just watch them and record them, don't say or do anything. Use a master apprentice model where the user is the master and you are the apprentice. To get them to agree to let them watch you, tell them you are a student and doing this for a class project or pay them or get one of their colleagues to get them interested.
+
+## Affordances
+Relationship between the properties of a physical object and the capabilities of a person that determine how the object is use
+
+Chair affords sitting
+Chair affords lifting
+Knobs afford turning, pulling
+Buttons afford pressing
+Glass affords viewing, breaking
+
+### Signifiers
+Help people figure out the affordances of objects without labels or instructions
+Chair affords sitting(since there is a flat surface held by legs)
+Buttons afford pressing (it looks like it fits our fingertip)
+Glass affords viewing, breaking (you can already see through it)
+
