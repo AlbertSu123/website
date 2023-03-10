@@ -6,9 +6,12 @@ socialImage: "/media/image-2.jpg"
 
 ## Current
 
-- 👨‍💻 @ [Risk Harbor](https://riskharbor.com/)
 - 💻 @ UC Berkeley
 
 ## Previous
 
 - 👨‍💻 @ NSA
+- 👨‍💻 @ [Risk Harbor](https://riskharbor.com/)
+- 👨‍💻 @ NSA
+
+[Resume](/media/Albert%20Su%20Resume.pdf)
