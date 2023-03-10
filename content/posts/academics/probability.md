@@ -614,3 +614,82 @@ f<sub>y</sub>(y) = {1/a * F<sub>x</sub>((y-b)/a) if a > 0, -1/a * F<sub>x</sub>(
 
 Y = AX + b
 f<sub>y</sub>(y) = 1/|det(A)|f<sub>x</sub>(A<sup>-1</sup>(y-b))
+
+# Information Theory and Digital Communication, Capacity of the Binary Erasure Channel (BEC)	
+
+## Modes of Convergence
+
+Weak law of large numbers: Everyone in the room takes a coin and flips it 500 times. Then we can saw the empirical frequency is between .49 and .51. Then everyone flips it 500 more times. Then the empirical frequency is between .495 and .505. However, someone might have been between .49 and .51 in the first 500 but not .495 ad .505 in the first 1000
+Strong law of large numbers: The empirical frequency will go to its true probability with probability 1.
+
+CLT is a statement about convergence in a distribution
+
+# Information Theory
+
+## Source Coding Theorem
+
+### Protocol
+If I observe (x<sub>1</sub>, ..., x<sub>n</sub>), then I describe it via bitstring (1, xxx...x) -> log(A<sub>t/2</sub>)
+If I observe a sequence not in the typical set, I describe it brute force via bitstring
+
+What is the performance(average number of bits needed per symbol observed) for this scheme?
+1/n * E[number of bits in representation] ≤ 1/n (2 + n(H(x)+E))P(x<sub>1</sub>...x<sub>n</sub>) + 1/n (2 + nlog(x)) * P(x<sub>1</sub>...x<sub>n</sub>) ≤ H(x) + E/2 + 4/n + log|x| * probability of sequence not being in typical set
+
+### Results
+
+- Descriptions using ≤ H(x) + E bits per symbol on average exist
+- Lossless descriptions using ≤ H(x) don't exist
+- Huffman encoding: If I know p<sub>x</sub>, I can design a Huffman code requiring ≤ H(x) + 1/n bits on average to compress sequences of length n
+
+Question: How are we going to show we can compress down to the entropy?
+Answer: Use concentration. For a sequence(X<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>), let the probability of observing it be p(x<sub>1</sub>...x<sub>n</sub>) = Π<sub>i=1</sub><sup>n</sup> P<sub>x</sub>(x<sub>i</sub>)
+
+Theorem: Asymptotic Equipartition Property - If Xs are iid with respect to P<sub>x</sub>, then -1/n log p(x<sub>1</sub>...x<sub>n</sub>) converges to H(x) in probability
+
+Typical Set: For E > 0, for each n ≤ 1 define typical set
+A := { (x<sub>1</sub>...x<sub>n</sub>) : p(x<sub>1</sub>...x<sub>n</sub>) >= 2<sup>-n(H(x) + E)}
+
+Why is this called a typical set? It is a set of typical sequences.
+
+Question: Suppose I have N objects. What is the max number of bits I need to represent each object?
+Answer: max of log(N) bits
+
+# Poisson Processes
+Markov models: Map events that have memory
+Poisson Processes: Random arrivals: customers coming into a store, beta particles detected by geiger counter, vehicles passing a tollbooth
+Counting Processs: Starts at 0, right continuous, integer valued
+Poison Process: a counting process with Exp(λ) interarrival times
+
+Thm: If N<sub>t</sub> is a Poisson process with rate λ, then N<sub>t</sub> ~ Poisson(λt)
+P{N<sub>t</sub> = n} = e<sup>-λt</sup> * (λt)^n / n!
+
+Proof:
+P{N<sub>t</sub> = n} = P{T<sub>n</sub> <= t < T<sub>n+1</sub>}
+= E[1<sub>{T<sub>n</sub>} <= t</sub> 1<sub>t < T<sub>n+1</sub></sub>]
+
+Increments of Poisson process are stationary: N<sub>t+s</sub> - N<sub>s</sub> = N<sub>t + tau</sub> - N<sub>tau</sub>
+
+Poisson processes have independent increments:
+if t<sub>0<sub> < t<sub>1<sub> < ... < t<sub>k<sub>  
+=> increments N<sub>t1</sub> - N<sub>t0</sub>, N<sub>t2</sub> - N<sub>t1</sub>, ... , N<sub>t1</sub> - N<sub>t0</sub> are independent
+
+Thm: If N<sub>t</sub> is a counting process with independent stationary increments and N<sub>t</sub> ~ Poisson(λt), then N<sub>t</sub> ~ Poisson Process(λ)
+
+Conditional distribution of Arrivals
+Thm: Conditioned on {N<sub>t</sub> = n}, (T<sub>1</sub>, T<sub>2</sub>, ..., T<sub>n</sub>) = (Unif(1), ... Unif(n))
+
+Example: Let cars pass through a tollbooth according to Poisson Process(λ). 
+Question: What is the probability that no cars pass in 2 minutes
+P{N<sub>2</sub> = 0} = (λ2)^0 * e^(-2λ) / 0! = e^(-2λ)
+
+Question: If 10 vehicles pass in 2 minutes, what is the distribution of vehicles that passed in the first 30 seconds?
+Binomial(10, 1/4)
+
+## Merging(superposition) and Splitting(thinning)
+
+Merging: If N<sub>1,t</sub> is poisson process with rate λ and N<sub>2,t</sub> is an independent poisson process with rate u, then N<sub>1,t</sub> + N<sub>2,t</sub> ~ PP(λ+u)
+
+Splitting: Independently mask arrival with 1.
+Example: Let vehicles pass through a tollbooth with PP(λ). Let 1/3 of the vehicles be cards and 2/3s be trucks
+
+If 10 vehicles pass in the first 2 minutes, what is the distribution of cars that pass in the first 30 seconds?

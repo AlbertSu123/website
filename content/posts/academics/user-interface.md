@@ -60,3 +60,8 @@ Chair affords sitting(since there is a flat surface held by legs)
 Buttons afford pressing (it looks like it fits our fingertip)
 Glass affords viewing, breaking (you can already see through it)
 
+# Assessing Designs
+Automated - Usability measures computed by software: Web log analysis
+Inspection - Based on skills and experience of evaluators: Heuristic Evaluation, Cognitive Walkthrough
+Formal - Models and formulas to calculate measures: ML models that predict human performance, Fitts Law
+Empirical - Usability assessed by testing with real users: User studies, the gold standard
