@@ -21,6 +21,10 @@ Lombard Street
 End of Finance
 Global History - Nature of Money
 https://www.seriouseats.com/the-food-lab-answers-questions-about-food-science
+Alchemy of Finance
+Outsiders: Eight Unconventional CEOs
+Principles - Ray Dalio
+More Money than God
 
 # Read
 

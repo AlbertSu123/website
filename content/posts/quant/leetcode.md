@@ -73,7 +73,7 @@ I think I've cracked the two pointer style problems now!
 # Trees
 
 ## [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
-Need to figure out how pointers work her lol
+Need to figure out how pointers work here lol
 Do multi line assignments not work in c++?
 
 ## [Max Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -139,7 +139,22 @@ while (p != NULL || !s.empty()){
     p = p->right;
 }
 ```
+# Dynamic Programming
 
+## When should you use dynamic programming?
+When you see subproblems that would be helpful to know the answer to before the main problem
+
+## [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
+Problem: You can go up one stair or two stairs every step. How many ways can you go up n stairs?
+Solution: Build a dict(# of stairs left, number of ways) bottom up
+
+Lesson: If the immediate solution doesn't come to mind, solve it recursively first
+
+## [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+Problem: You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
+Solution: Build a dict(step, min cost to reach step)
+
+Lesson: Recursive solution first
 
 # Bitwise Operator
 
