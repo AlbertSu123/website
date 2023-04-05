@@ -36,7 +36,6 @@ Easy, but requires a bit of coding and thinking through how to iterate through 3
 Easy, just make sure to think about how can I iterate through less stuff(use a set), and make sure to iterate through the less stuff.
 
 # Two Pointer
-
 ## When should you use two pointers?
 Intuition: Use two pointers when the problem needs two or more pieces of information in the answer. 
 Two pointer also is commonly used when the array is sorted/when order matters, as is the case with trapping rain water.
@@ -68,7 +67,34 @@ Use the two pointer approach, one pointer at each of the array
 If the Area is bigger than maxArea, set maxArea
 Move the shorter pointer towards the middle until you hit a taller pointer.
 
-I think I've cracked the two pointer style problems now!
+## [Longest Substring Without Repeating Characters]()
+Problem: Given a string, find the length of the longest substring without repeating pointers
+Solution: Create a map (character -> index of character within string)
+1. Use two pointers for the current substring
+2. If the right character is not in the map, update the longest substring length
+3a. If the right character is in the map and the most recent location of the character is within the window, move the window's left to the most recent location of the character + 1
+3b. If the right character is in the map and the most recent location of the character is within the window, update the longest substring length
+4. Update the map with the rightmost character and its location
+
+## [Longest Repeating Character Replacement]
+Problem: Given a string s and integer k. Return the length of the longest substring containing the same letter you can get if you can replace at most k characters within the substring with any character
+Solution:
+```
+def characterReplacement(self, s: str, k: int) -> int:
+    freq = defaultdict(lambda: 0) # character -> number of appearances in window
+    most_freq_letter, max_len, l = 0,0,0
+    for r in range(len(s)):
+        freq[s[r]] += 1
+        # clever part
+        most_freq_letter = max(most_freq_letter, freq[s[r]])
+        letters_to_change = r - l + 1 - most_freq_letter
+        if letters_to_change > k:
+            # move the left end of the window right 1
+            freq[s[l]] -= 1
+            l += 1
+        max_len = max(max_len, r - l + 1)
+    return max_len
+```
 
 # Trees
 
@@ -139,6 +165,7 @@ while (p != NULL || !s.empty()){
     p = p->right;
 }
 ```
+
 # Dynamic Programming
 
 ## When should you use dynamic programming?
@@ -156,7 +183,35 @@ Solution: Build a dict(step, min cost to reach step)
 
 Lesson: Recursive solution first
 
+## [House Robber](https://leetcode.com/problems/house-robber/)
+Problem: Given an array of house values, maximize the amount robbed. If you rob two consecutive houses, you go to jail.
+Solution: Build a dict(index => max value possible at this index)
+
+Lesson: Check for edge cases. In this case it would be if the array had less than 2 elements
+
+## [House Robber II](https://leetcode.com/problems/house-robber-ii/)
+Problem: Same as house robber one but the houses are in a circle, so if you rob house 1 you can't rob house n and vice versa
+
+Solution: Same thing as house robber but call the house robber solver twice, one for [0:n-1], one for [1:n]
+
+## [Longest Palindromic Substring]()
+Problem: Given a string in s, return the longest palindromic substring in s
+Solution: 
+
 # Bitwise Operator
+
+## [Reverse Integer]()
+Problem: Given a signed 32 bit integer x, return x with the digits reversed. If reversing x causes the value to go outside [-2**31, 2**31 - 1], return 0.
+
+Solution:
+1. Find if x is negative or positive
+2. 
+```
+While x:
+    result = result * 10 + x % 10
+    x //= 10
+```
+3. Add multiply result by symbol
 
 ## [Single Number](https://leetcode.com/problems/single-number/)
 Problem: Given an array of numbers, find the single number that is not repeated twice
@@ -165,3 +220,36 @@ Solution: Xor everything together, the final number is the answer.
 ## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 Problem: Return the number of 1 bits in an integer
 Solution: Iterate through the number and & it with 1
+
+# Linked list
+
+## [Add Two Numbers]()
+Problem: Given two linked lists representing two integers. The digits are stored in reverse order and each of the nodes contain a single digit. Add the two numbers and return the sum as a linked list.
+
+ie 2->4->3 + 5->6->4 = 7->0->8
+
+Solution:
+Create a helper function that recursively returns the solution.
+helper(list1, list2, carry)
+1. If both lists are null and carry is 0, return an empty list
+2. If both lists are null and carry is non-zero, append the carry to the end of the list
+3. If l1 is not null and l2 is null, append l1.val + carry % 10 and recursively call the function with carry = max(l1.val + carry - 10, 0)
+4. Repeat but with l2
+5. Otherwise, add the first elements of both lists and the carry, append this to the end of the list, and recursively call it with carry = (l1.val + l2.val + carry) // 10
+
+## [Remove Nth Node from End of List]()
+Problem: Given the head of a linked list, remove the nth node from the end of the list and return its head
+ie 1->2->3->4->5 n=2 => 1->2->3->5
+Solution:
+1. Use two pointers that both start off at head
+2. Advance the first pointer by n
+3. Advance both pointers simultaneously until the first pointer reaches end.
+4. Remove the node at the second pointer
+
+## [Merge k sorted lists]()
+
+# Stack
+
+## [Min Stack]
+Problem: Implement a stack that supports retrieving the minimum element in constant time and push, pop, top
+Solution: Create a linked list with three fields in each node: min, val, next

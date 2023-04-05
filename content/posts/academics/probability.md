@@ -693,3 +693,51 @@ Splitting: Independently mask arrival with 1.
 Example: Let vehicles pass through a tollbooth with PP(λ). Let 1/3 of the vehicles be cards and 2/3s be trucks
 
 If 10 vehicles pass in the first 2 minutes, what is the distribution of cars that pass in the first 30 seconds?
+
+## Random Graphs and Inference
+G ~ G(n,p): G is a graph with n verticies where each edge appears indepedently with probability p.
+
+Monotone Graph Properties have sharp thresholds: P {G ~ G(n,p) has property P} = {0 if p < threshold n , 1 if p > threshold n}
+There is some phase transition phenomena.
+
+Ex: p = {graph G has >= 1 edge} Monotone property.
+Claim: t(n) = 1/n^2
+Proof: Let x = # of edges in G, p = c / n^2
+What is the probability G has zero edges?
+P{G has zero edges} = P{X=0} = (1-p)^(n C 2) = e^(-c/2)
+This evaluates to basically 1 if c << 1 and 0 if c >> 1
+
+Goal: For property p={graph G is connected}, show that t(n) = (log(n)/n)
+If lambda > 1, then P{G~G(n,p) is connected} -> 1 as n->infinity
+If lambda < 1, then P{G~G(n,p) is connected} -> 0 as n->infinity
+
+Lemma: If X is a random variable, then P(X=0) <= Var(x)/(E[X])^2
+Proof: 
+Var(x) = E[X-E[X]]^2
+= P(X=0) * E[X-(E[X])^2 | X=0] + P(X!=0) * E[(X-E[X])^2 | X=0]
+= P(X=0) * E[X]^2 + P(X!=0) * E[(X-E[X])^2 | X=0]
+
+Case lambda < 1:
+Will show: P{G has isolated vertex} -> 1
+{G has isolated vertex} C {G is disconnected}
+X = Σ I_i = # of isolated verticies, where I_i = {0 if i not isolated, 1 if i isolated}
+I_i ~ Bern(q) where q_i := (1-p)^(n-1)
+Var(X) = Σ Var(I_i) + Σ Covar(I_i, I_j)
+= nq(1-q) + n(n-1)Cov(I_1, I_2)
+
+Where Cov(I_1, I_2) = E[I_1I_2] - (E[I])^2
+P{G has no isolated vertices} = P{X=0} <= (nq(1-q) + n(n-1) * pnq^2/(1-p))/(n^2q^2)
+<= (1-q)/nq + p/(1-p)
+(1-q)/nq goes to zero since nq -> infinity
+p/(1-p) goes to zero as p -> 0
+
+P{G disconnected} = P{U_k=1^{n/2} {There exists a set of k vertices sepearted from the rest of G}}
+Apply union bound again
+P{(n C k) P {vertices 1, ..., }}
+
+### Inference
+Given data, how do I choose the model that generated the data
+X is the state of nature, often parameter or hypothesis -> P_{Y|X} -> Y produces some observation(data)
+X may or may not be the random variable
+If it is, then the distribution of X is called a prior(Bayesian Inference)
+
