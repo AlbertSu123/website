@@ -731,7 +731,7 @@ P{G has no isolated vertices} = P{X=0} <= (nq(1-q) + n(n-1) * pnq^2/(1-p))/(n^2q
 (1-q)/nq goes to zero since nq -> infinity
 p/(1-p) goes to zero as p -> 0
 
-P{G disconnected} = P{U_k=1^{n/2} {There exists a set of k vertices sepearted from the rest of G}}
+P{G disconnected} = P{U_k=1^{n/2} {There exists a set of k vertices separated from the rest of G}}
 Apply union bound again
 P{(n C k) P {vertices 1, ..., }}
 
@@ -740,4 +740,41 @@ Given data, how do I choose the model that generated the data
 X is the state of nature, often parameter or hypothesis -> P_{Y|X} -> Y produces some observation(data)
 X may or may not be the random variable
 If it is, then the distribution of X is called a prior(Bayesian Inference)
+
+## Inference
+
+Goal: Infer X from Y
+X -> Model -> Y
+
+Reasonable Approaches:
+- MLE(X|Y) = argmax P(Y|X)
+- Binary Hypothesis testing. X(Y) = 1 if L(Y) > lambda, 0 if L(Y) < lambda
+
+For any test X:Y, there are two fundamental error rates, false positives and false negatives
+
+False Positive: P{X(Y) = 1 | X = 0}
+
+False Negative: P{X(Y) = 0 | X = 1}
+
+Question: Given a constraint on type 1 error rate, how do we find the test that minimizes type II error rate?
+Solution:
+Solve X = argmin P{X(Y) = 0| X=1}
+Answer: Randomized threshold tests are optimal: Neyman-Pearson Theorem
+Given Beta, the optimal decision rule is X(Y) = 1 if L(Y) > lambda, 0 if L(Y) < lambda, Bernoulli(gamma) if L(Y) = lambda
+Where lambda and gamma are chosen such that P{X(Y) = 1 | X=0} = beta
+
+B = P(L(Y) >= lambda | X=0)
+= P(Y/sigma >= 1/(2*sigma) + phi*log(lambda|X=0))
+= 1 - phi(1/(2*sigma) + sigma*log(lambda))
+
+Question: Where does randomization enter the picture
+Answer: Deterministic threshold tests define and lie on error curve, but don't necessarily sweep the whole thing
+Ex: If Y is discrete, say binary-valued, then L(Y) takes at most 2 values
+Takes two tests and randomizes between them
+
+Threshold tests are optimal
+
+Estimation under mean squared error
+Goal: Estimate X based on Y under some loss function
+X -> Model -> Y
 
