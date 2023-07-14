@@ -13,7 +13,6 @@ tags:
 description: "Reflections on Life So Far"
 socialImage: "/media/image-2.jpg"
 ---
-
 What are my strengths?
 	- No forethought and no when to quit, but has drive to put something out into the world
 What do I need to improve on?

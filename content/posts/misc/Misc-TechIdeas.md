@@ -1,6 +1,6 @@
 ---
 title: Ideas on Tech
-date: "2025-11-20T23:46:37.121Z"
+date: "2023-11-20T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "tech-ideas"
